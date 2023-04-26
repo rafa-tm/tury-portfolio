@@ -1,0 +1,107 @@
+import { Link } from "react-router-dom";
+import HandCoding from "../assets/HandCoding.svg";
+import { MdStar } from "react-icons/md";
+import ProjectCard from "../components/ProjectCard";
+
+export default function Home() {
+  const lista = [
+    { id: 1, palavra: "tência" },
+    { id: 2, palavra: "Inovação" },
+    { id: 3, palavra: "Aprendizado contínuo" },
+    { id: 4, palavra: "Pensamento lógico" },
+    { id: 5, palavra: "Criatividade" },
+    { id: 6, palavra: "Eficiência" },
+    { id: 7, palavra: "Trabalho em equipe" },
+    { id: 8, palavra: "Qualidade" },
+    { id: 9, palavra: "Melhoria contínua" },
+    { id: 10, palavra: "Agilidade" },
+    { id: 11, palavra: "Eficiência" },
+    { id: 12, palavra: "Qualidade" },
+    { id: 13, palavra: "Padronização" },
+    { id: 14, palavra: "Refatoração" },
+    { id: 15, palavra: "Boas práticas" },
+    { id: 16, palavra: "Comprometimento" },
+    { id: 17, palavra: "Foco" },
+    { id: 18, palavra: "Determinação" },
+    { id: 19, palavra: "Organização" },
+    { id: 20, palavra: "Responsabilidade" },
+    { id: 21, palavra: "Desenvolvimento pessoal" },
+    { id: 22, palavra: "Planejamento" },
+    { id: 23, palavra: "Entrega contínua" },
+    { id: 24, palavra: "Simplicidade" },
+    { id: 25, palavra: "Elegância" },
+    { id: 26, palavra: "Robustez" },
+    { id: 27, palavra: "Escalabilidade" },
+    { id: 28, palavra: "Segurança" },
+    { id: 29, palavra: "Mentoria" },
+    { id: 30, palavra: "Inclusão" },
+  ];
+
+  const anos = new Date().getFullYear() - 2020;
+
+  return (
+    <main className="w-full bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
+      <section className="w-full flex flex-col lg:flex-row py-36 px-20 gap-24 justify-center items-center ">
+        <div className="w-[90%] lg:w-[50%] text-center text-xl flex flex-col gap-6 items-center ">
+          <p className="text-2xl font-medium"> Olá, meu nome é </p>
+          <h1 className="text-5xl font-black text-primary">
+            Rafael Tury Minatel
+          </h1>
+          <p className="text-2xl font-medium">
+            Desenvolvedor Full Stack e Designer UI/UX
+          </p>
+          <div className="flex flex-col text-base font-light text-center gap-2">
+            <p>
+              Sou apaixonado por tecnologia e pela criação de soluções para
+              melhorar a vida das pessoas, tenho trabalhado no desenvolvimento
+              de aplicações web de alta qualidade há mais de {anos} anos.
+            </p>
+            <p>
+              {" "}
+              Minhas habilidades abrangem desde a concepção de interfaces de
+              usuário intuitivas e atraentes até o desenvolvimento de código
+              robusto e escalável. Se você está procurando um profissional
+              altamente qualificado para sua equipe ou projeto, não hesite em
+              entrar em contato comigo.
+            </p>
+          </div>
+          <Link
+            to={"/contato"}
+            className="bg-primary font-bold text-lg rounded-lg py-2 px-4 text-lightText shadow-lg hover:scale-110 transition-transform"
+          >
+            Entre em contato
+          </Link>
+        </div>
+        <img
+          src={HandCoding}
+          alt="Mão humana programando"
+          width={448}
+          height={448}
+          className="max-w-md"
+        />
+      </section>
+
+      <div className="w-full h-24 my-32 sm:flex items-center hidden relative bg-gradient-to-r from-primary to-secondary overflow-x-clip">
+        <div className="flex gap-4 h-16 font-bold absolute bottom-12 -skew-y-1 antialiased bg-darkBackground text-darkText  dark:bg-lightBackground dark:text-lightText">
+          {lista.map((item) => (
+            <div key={item.id} className="flex items-center gap-4">
+              <p className="min-w-max text-xl">{item.palavra} </p>
+              <MdStar className="text-tertiary" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <section className="w-full flex flex-col lg:flex-row px-20 pb-36 gap-24 justify-center items-center ">
+        <div className="w-[90%] flex flex-col  justify-between">
+          <h1 className="text-4xl font-medium">Meus Projetos</h1>
+          <div>
+            <ProjectCard project={{ nome: "TESTE" }} />
+            <ProjectCard project={{ nome: "TESTE" }} />
+            <ProjectCard project={{ nome: "TESTE" }} />
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
