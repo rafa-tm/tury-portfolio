@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import ThemeButton from "../ThemeButton";
+import Button from "../Button";
 
 export default function Header() {
   return (
@@ -8,19 +8,20 @@ export default function Header() {
         "w-full flex justify-between items-center px-40 py-4 bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText"
       }
     >
-      <Link to="/" className="hover:scale-110 text-lg font-semibold">
-        Inicio
-      </Link>
+      <Button to={"/"} type={"text"} className={"text-lg"}>
+        Início
+      </Button>
       <nav className="flex gap-12 items-center ">
-        <Link to="/projects" className="hover:scale-110 text-lg font-semibold">
+        <Button to={"/projetos"} type={"text"} className={"text-lg"}>
           Projetos
-        </Link>
-        <Link
-          to="/contact"
-          className="bg-primary font-bold rounded-lg py-2 px-4 text-lightText shadow-lg hover:scale-110 transition-transform"
-        >
+        </Button>
+        <Button to={"/sobreMim"} type={"text"} className={"text-lg"}>
+          Sobre mim
+        </Button>
+        <Button to={"/"} type={"primary"} className={"px-3 py-1 text-lg"}>
           Contato
-        </Link>
+        </Button>
+
         <ThemeButton />
       </nav>
     </header>

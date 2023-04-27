@@ -8,7 +8,6 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const localTheme = localStorage.getItem("theme");
-    console.log(localTheme);
 
     if (localTheme === null || localTheme === undefined) {
       localStorage.setItem("theme", "dark");
