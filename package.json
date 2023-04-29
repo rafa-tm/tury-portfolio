@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "netlify": "vite build --base=/https://rafaeltury.netlify.app/",
+    "netlify": "vite build --base=/rafaeltury.netlify.app/",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
