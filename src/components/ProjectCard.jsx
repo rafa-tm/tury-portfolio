@@ -3,6 +3,20 @@ import { MdOpenInNew } from "react-icons/md";
 import Button from "./Button";
 
 export default function ProjectCard({ project }) {
+  function getLink() {
+    let link = project.github;
+    if (
+      project.github === " " ||
+      project.github === "" ||
+      project.github === "Projeto privado"
+    ) {
+      link = project.linkAcesso;
+    } else {
+      link = project.github;
+    }
+    return link;
+  }
+
   return (
     <div className="max-w-[25rem] flex flex-col shadow-lg rounded-xl bg-lightBackground-100 dark:bg-darkBackground-100 overflow-hidden ">
       <div className="min-h-[16rem] w-full relative">
@@ -32,9 +46,11 @@ export default function ProjectCard({ project }) {
         </div>
 
         <Button
-          to={"/"}
+          to={getLink()}
           className="flex gap-2 items-center px-4 py-2"
           type={"primary"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
         >
           <span>Ver mais</span>
           <MdOpenInNew />
