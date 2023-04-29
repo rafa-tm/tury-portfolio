@@ -4,28 +4,35 @@ import Button from "./Button";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="w-full shadow-lg rounded-xl bg-lightBackground-100 dark:bg-darkBackground-100 overflow-hidden ">
-      <div className="relative">
-        <img src={project.imagem} alt={project.imagemAlt} />
+    <div className="max-w-[25rem] flex flex-col shadow-lg rounded-xl bg-lightBackground-100 dark:bg-darkBackground-100 overflow-hidden ">
+      <div className="min-h-[16rem] w-full relative">
+        <img
+          src={project.imagem}
+          alt={project.imagemAlt}
+          width={400}
+          height={226}
+        />
         <div className="absolute bottom-0 right-0 flex gap-2 bg-lightBackground-100 dark:bg-darkBackground-100 px-4 py-2 items-center rounded-tl-lg ">
-          {project.tipos.map((tipo) => (
+          {project.category.map((category) => (
             <span
-              key={tipo}
+              key={category}
               className="bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText rounded-lg px-4 py-2 text-sm font-bold"
             >
-              {tipo}
+              {category}
             </span>
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-12 px-6 pb-8 pt-4">
-        <div className="flex flex-col gap-2 w-full">
-          <h1 className="text-2xl font-bold">{project.nome}</h1>
-          <p className="text-base font-light">{project.descricao}</p>
+      <div className="flex flex-col gap-12 justify-between h-full px-6 pb-8 pt-4">
+        <div className="flex flex-col w-full gap-4">
+          <h1 className="text-2xl font-bold">{project.title}</h1>
+          <p className="text-base font-light text-justify">
+            {project.description}
+          </p>
         </div>
 
         <Button
-          to={`/projetos/${project.nome}`}
+          to={"/"}
           className="flex gap-2 items-center px-4 py-2"
           type={"primary"}
         >
@@ -38,5 +45,5 @@ export default function ProjectCard({ project }) {
 }
 
 ProjectCard.propTypes = {
-  project: PropTypes.objectOf(PropTypes.string).isRequired,
+  project: PropTypes.objectOf(PropTypes.any).isRequired,
 };

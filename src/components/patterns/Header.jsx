@@ -15,7 +15,7 @@ export default function Header() {
         <Button to={"/projetos"} type={"text"} className={"text-lg"}>
           Projetos
         </Button>
-        <Button to={"/sobreMim"} type={"text"} className={"text-lg"}>
+        <Button to={"/sobre"} type={"text"} className={"text-lg"}>
           Sobre mim
         </Button>
         <Button to={"/"} type={"primary"} className={"px-3 py-1 text-lg"}>

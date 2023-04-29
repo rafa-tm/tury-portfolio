@@ -1,10 +1,7 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export default function Button(
-  { children, to, type, className, action },
-  ...props
-) {
+export default function Button({ children, to, type, className, action }) {
   let style = "";
   switch (type) {
     case "primary":
@@ -42,14 +39,13 @@ export default function Button(
         onClick={action}
         className={style + " " + className}
         type="button"
-        {...props}
       >
         {children}
       </button>
     );
   } else {
     return (
-      <Link to={to} className={style + " " + className} {...props}>
+      <Link to={to} className={style + " " + className}>
         {children}
       </Link>
     );

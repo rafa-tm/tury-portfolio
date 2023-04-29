@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import HandCoding from "../assets/HandCoding.svg";
 import { MdStar } from "react-icons/md";
 import ProjectCard from "../components/ProjectCard";
-import Print from "../assets/PrintUShareWeb.png";
 import Button from "../components/Button";
 import { habilidades } from "../utils/habilidades";
+import projetos from "../utils/projetos";
 
 export default function Home() {
   const lista = [
@@ -33,20 +33,6 @@ export default function Home() {
     { id: 23, palavra: "Entrega contínua" },
     { id: 24, palavra: "Simplicidade" },
     { id: 25, palavra: "Elegância" },
-  ];
-
-  const projetos = [
-    {
-      tipos: ["Front-End", "CSR"],
-      nome: "Projeto 1",
-      descricao:
-        "O projeto 1 é um projeto de teste onde foi utilizado as tecnologias React, Next e Node. Suas funcionalidades principais são a de cadastro, gerenciamento e agendamento de consultas.",
-      tecnologias: ["React JS", "Next JS", "Node JS", "Node JS", "Node JS"],
-      imagem: Print,
-      imagemAlt: "Imagem do projeto 1",
-      linkAcesso: "https://www.google.com.br",
-    },
-    {},
   ];
 
   const anos = new Date().getFullYear() - 2020;
@@ -108,7 +94,7 @@ export default function Home() {
           <h1 className="w-full text-4xl font-medium">Projetos recentes</h1>
           <div className="flex flex-col lg:flex-row gap-10">
             <ProjectCard project={projetos[0]} />
-            <ProjectCard project={projetos[0]} />
+            <ProjectCard project={projetos[1]} />
           </div>
           <Button to={"/projetos"} type={"gradient"} className={"px-8 py-6 "}>
             Ver todos os projetos

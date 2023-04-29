@@ -28,5 +28,5 @@ export const ThemeProvider = ({ children }) => {
 };
 
 ThemeProvider.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.any,
 };
