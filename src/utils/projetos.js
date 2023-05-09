@@ -3,7 +3,7 @@ import lifecarefront from "../assets/projetos/LifeCareFront.png";
 import lifecarestatic from "../assets/projetos/LifeCareStatic.png";
 import lifecareback from "../assets/projetos/LifeCareBack.png";
 import lifecaressr from "../assets/projetos/LifeCareSSR.png";
-import arquiteturaCSS from "../assets/projetos/arquiteturaCss.png"
+import arquiteturaCSS from "../assets/projetos/ArquiteturaCss.png"
 import portfolio from "../assets/projetos/Portfolio.png"
 import omniStack from "../assets/projetos/omniStack.webp"
 
