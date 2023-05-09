@@ -1,3 +1,5 @@
+import c from "../assets/habilitsLogos/CLanguage.svg";
+import cPlusPlus from "../assets/habilitsLogos/cPlusPlus.svg";
 import java from "../assets/habilitsLogos/java.svg";
 import javascript from "../assets/habilitsLogos/javascript.svg";
 import typescript from "../assets/habilitsLogos/Typescript.svg";
@@ -16,6 +18,16 @@ import scrum from "../assets/habilitsLogos/scrum.svg";
 import figma from "../assets/habilitsLogos/figma.svg";
 
 export const habilidades = [
+    {
+        id: "16",
+        name: "C",
+        img: c,
+    },
+    {
+        id: "17",
+        name: "C++",
+        img: cPlusPlus,
+    },
     {
         id: "0",
         name: "Java",

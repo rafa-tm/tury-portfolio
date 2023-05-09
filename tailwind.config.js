@@ -20,7 +20,21 @@ export default {
         "lightBackground": "#FFFFFF",
         "lightBackground-100": "#F2F2F2",
         "lightText": "#1A1A1A",
-
+      },
+      animation: {
+        scale: "scale 2s ease-in-out infinite",
+        bounce: "bounce 2s ease-in-out infinite",
+      },
+      keyframes: {
+        scale: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+          "100%": { transform: "scale(1)" },
+        },
+        bounce: {
+          "0%, 100%": { transform: "translateY(-5%)" },
+          "50%": { transform: "translateY(0)" },
+        },
       },
     },
   },

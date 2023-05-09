@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -28,6 +28,14 @@ export default function Footer() {
             className="hover:text-tertiary hover:scale-125 transition duration-300"
           >
             <FaEnvelope className="text-2xl" />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=5514997644542"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-tertiary hover:scale-125 transition duration-300"
+          >
+            <FaWhatsapp className="text-2xl" />
           </a>
         </div>
         <div className="flex flex-col gap-4 text-center">

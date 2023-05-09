@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 export default function Button(
-  { children, to, type, className, action, target, rel },
+  { children, to, type, className, action, target, rel, disable },
   props
 ) {
   let style = "";
@@ -34,6 +34,15 @@ export default function Button(
     style =
       style +
       " hover:scale-105 rounded-lg font-semibold shadow-lg flex justify-center min-w-max";
+  }
+
+  if (disable) {
+    style = style + " opacity-50 cursor-not-allowed";
+    return (
+      <button className={style + " " + className} type="button" {...props}>
+        {children}
+      </button>
+    );
   }
 
   if (action) {
@@ -71,4 +80,5 @@ Button.propTypes = {
   action: PropTypes.func,
   target: PropTypes.string,
   rel: PropTypes.string,
+  disable: PropTypes.bool,
 };
