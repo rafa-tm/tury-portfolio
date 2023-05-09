@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <main className="w-full bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
-      <section className="w-full flex flex-col lg:flex-row py-40 px-10 gap-24 justify-center items-center ">
+      <section className="w-full min-h-screen flex flex-col lg:flex-row py-40 px-10 gap-24 justify-center items-center ">
         <div className="w-[90%] lg:w-[50%] text-center text-xl flex flex-col gap-6 items-center ">
           <p className="text-2xl font-medium"> Olá, meu nome é </p>
           <h1 className="text-5xl font-black text-primary">
