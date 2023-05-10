@@ -54,7 +54,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="w-full flex flex-wrap justify-center gap-12">
+        <div className="w-full flex flex-wrap justify-center gap-12 lg:gap-20 xl:gap-24">
           {projetosFiltrados.map((projeto) => (
             <ProjectCard key={projeto.id} project={projeto} />
           ))}

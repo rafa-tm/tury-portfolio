@@ -10,6 +10,7 @@ import omniStack from "../assets/projetos/omniStack.webp"
 //ui/ux
 import usharePrototipo from "../assets/projetos/ushareProtot.png";
 import seAchePrototipo from "../assets/projetos/seAcheProtot.png";
+import checappPrototipo from "../assets/projetos/checappProtot.png";
 
 const projetos = [
   {
@@ -128,8 +129,8 @@ const projetos = [
     imagem: usharePrototipo,
     imagemAlt: "Imagem do protótipo uShare",
     linkAcesso: "Projeto privado",
-    apresentação: " ",
-    figma: "https://www.figma.com/file/9w36hk70LvyIaA0C9ZsBl2/uShare?node-id=236%3A4162&t=MvRPFJLMjShsc9te-1"
+    github: " ",
+    figma: "Projeto privado"
   },
   {
     id: "101",
@@ -137,12 +138,25 @@ const projetos = [
     category: ["UI/UX"],
     description:
       "SeAche é um aplicativo para facilitar a localização dentro da universidade, com o intuito de ajudar os alunos a encontrarem salas, trailers de alimentação e o restaurante universitário.",
-    tecnologias: ["Figma"],
+    tecnologias: ["Figma", "Adobe Illustrator"],
     imagem: seAchePrototipo,
     imagemAlt: "Imagem do protótipo SeAche",
     linkAcesso: "https://www.figma.com/proto/7qX6733HTS2o4yZq6LdDJc/Se-ache?page-id=5%3A47&node-id=5-76&viewport=346%2C356%2C0.1&scaling=scale-down&starting-point-node-id=5%3A76&show-proto-sidebar=1",
     github: " ",
     figma: "https://www.figma.com/file/7qX6733HTS2o4yZq6LdDJc/Se-ache?node-id=5%3A47&t=NxMreeU22a67baTm-1"
+  },
+  {
+    id: "102",
+    title: "ChecAPP",
+    category: ["UI/UX"],
+    description:
+      "Aplicativo para que qualquer pessoa possa realizar o salvamento de todos seus exames e compartilhamento destes com qualquer profissional cadastrado no sistema.",
+    tecnologias: ["Figma", "AutoLayout"],
+    imagem: checappPrototipo,
+    imagemAlt: "Imagem do protótipo ChecAPP",
+    linkAcesso: "",
+    github: "",
+    figma: "https://www.figma.com/file/2fKHZu8h5dotMaKMge2scJ/ChecApp?type=design&node-id=884%3A10035&t=qb9HuLEOuFajs3GN-1"
   }
 ];
 

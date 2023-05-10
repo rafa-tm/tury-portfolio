@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import HandCoding from "../assets/HandCoding.svg";
 import { MdStar } from "react-icons/md";
 import ProjectCard from "../components/ProjectCard";
@@ -39,8 +38,8 @@ export default function Home() {
 
   return (
     <main className="w-full bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
-      <section className="w-full min-h-screen flex flex-col lg:flex-row py-40 px-10 gap-24 justify-center items-center ">
-        <div className="w-[90%] lg:w-[50%] text-center text-xl flex flex-col gap-6 items-center ">
+      <section className="w-full min-h-screen flex flex-col lg:flex-row py-32 px-10 gap-24 justify-center items-center ">
+        <div className="w-[90%] lg:w-[50%] text-left text-xl flex flex-col gap-6 items-left ">
           <p className="text-2xl font-medium"> Olá, meu nome é </p>
           <h1 className="text-5xl font-black text-primary">
             Rafael Tury Minatel
@@ -48,7 +47,7 @@ export default function Home() {
           <p className="text-2xl font-medium">
             Desenvolvedor Full Stack e Designer UI/UX
           </p>
-          <div className="flex flex-col text-base font-light text-center gap-2">
+          <div className="flex flex-col text-xl font-light gap-2">
             <p>
               Sou apaixonado por tecnologia e pela criação de soluções para
               melhorar a vida das pessoas, tenho trabalhado no desenvolvimento
@@ -62,12 +61,13 @@ export default function Home() {
               entrar em contato comigo.
             </p>
           </div>
-          <Link
+          <Button
             to={"/contato"}
-            className="bg-primary font-bold text-lg rounded-lg py-2 px-4 text-lightText shadow-lg hover:scale-110 transition-transform"
+            type={"primary"}
+            className="p-4 max-w-xs mt-8"
           >
             Entre em contato
-          </Link>
+          </Button>
         </div>
         <img
           src={HandCoding}
@@ -78,7 +78,7 @@ export default function Home() {
         />
       </section>
 
-      <div className="w-full h-24 my-32 sm:flex items-center hidden relative bg-gradient-to-r from-primary to-secondary overflow-x-clip">
+      <div className="w-full h-24 my-24 sm:flex items-center hidden relative bg-gradient-to-r from-primary to-secondary overflow-x-clip">
         <div className="flex gap-4 h-16 font-bold absolute bottom-12 -skew-y-1 antialiased bg-darkBackground text-darkText  dark:bg-lightBackground dark:text-lightText">
           {softSkills.map((item) => (
             <div key={item.id} className="flex items-center gap-4">
@@ -89,10 +89,10 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="w-full flex px-10 pb-36 gap-24 justify-center items-center ">
+      <section className="w-full flex px-10 py-32 gap-24 justify-center items-center ">
         <div className="w-[90%] flex flex-col items-center justify-between gap-24">
           <h1 className="w-full text-4xl font-medium">Projetos recentes</h1>
-          <div className="flex flex-col md:flex-wrap lg:flex-row gap-10 justify-center">
+          <div className="flex flex-col md:flex-wrap lg:flex-row gap-10 lg:gap-24 justify-center">
             <ProjectCard project={projetos[0]} />
             <ProjectCard project={projetos[1]} />
             <ProjectCard project={projetos[3]} />
@@ -103,12 +103,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full flex flex-col lg:flex-row px-10 pb-36 gap-24 justify-center items-center ">
+      <section className="w-full flex flex-col lg:flex-row px-10 py-36 gap-24 justify-center items-center ">
         <div className="w-[90%] flex flex-col items-center justify-between gap-24">
           <h1 className="w-full text-4xl font-medium">
             Habilidades, Tecnologias e Ferramentas
           </h1>
-          <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-y-24 gap-x-8">
+          <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-y-24 gap-x-8 xl:gap-x-24 ">
             {habilidades.map((item) => (
               <div
                 key={item.id}
@@ -119,7 +119,7 @@ export default function Home() {
                   alt={item.nome + " logo"}
                   className="min-h-[100px] max-h-[100px]"
                 />
-                <p className="text-center text-lg">{item.name}</p>
+                <p className="text-center text-lg font-semibold">{item.name}</p>
               </div>
             ))}
           </div>

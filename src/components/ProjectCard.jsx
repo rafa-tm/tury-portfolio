@@ -71,7 +71,8 @@ export default function ProjectCard({ project }) {
           {project.github === " " ||
           project.github === "" ||
           project.github === "Projeto privado" ? (
-            project.figma || project.category[0] === "UI/UX" ? (
+            project.figma !== "Projeto privado" &&
+            project.category[0] === "UI/UX" ? (
               <Button
                 to={project.figma}
                 className="flex gap-2 items-center px-4 py-2"
