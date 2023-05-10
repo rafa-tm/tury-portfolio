@@ -11,6 +11,7 @@ import omniStack from "../assets/projetos/omniStack.webp"
 import usharePrototipo from "../assets/projetos/ushareProtot.png";
 import seAchePrototipo from "../assets/projetos/seAcheProtot.png";
 import checappPrototipo from "../assets/projetos/checappProtot.png";
+import escavattoPrototipo from "../assets/projetos/escavattoProtot.png";
 
 const projetos = [
   {
@@ -157,6 +158,33 @@ const projetos = [
     linkAcesso: "",
     github: "",
     figma: "https://www.figma.com/file/2fKHZu8h5dotMaKMge2scJ/ChecApp?type=design&node-id=884%3A10035&t=qb9HuLEOuFajs3GN-1"
+  },
+  {
+    id: "103",
+    title: "Escavatto",
+    category: ["UI/UX"],
+    description:
+      "Sistema web que possibilita que clientes façam a contratação de máquinas e implementos de obras de fornecedores cadastrados no sistema.",
+    tecnologias: ["Figma"],
+    imagem: escavattoPrototipo,
+    imagemAlt: "Imagem do protótipo Escavatto",
+    linkAcesso: "https://escavatto.com.br/",
+    github: " ",
+    figma: "https://www.figma.com/file/cvci6O4jaAcqL2vN5KoShM/Escavatto?type=design&node-id=15%3A3&t=qDocTdjuTBsOluX2-1"
+
+  },
+  {
+    id: "104",
+    title: "LifeCare",
+    category: ["UI/UX"],
+    description:
+      "LifeCare é um projeto de sistema web para o agendamento de consultas com profissionais cadastrados. Permitindo cadastramento de usuários, profissionais e especialidades. O sistema também permite a busca de profissionais por area e especialidade.",
+    tecnologias: ["Figma"],
+    imagem: lifecarefront,
+    imagemAlt: "Imagem do sistema LifeCare",
+    linkAcesso: "https://rafa-tm.github.io/DSW2_trab/",
+    github: " ",
+    figma: "https://www.figma.com/file/J2AhdrQ0wZtrrgIvMwA4hH/LifeCare?type=design&node-id=0%3A1&t=bC1ukKpS0L5FFict-1"
   }
 ];
 
