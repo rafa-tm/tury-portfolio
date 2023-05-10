@@ -16,6 +16,8 @@ import trello from "../assets/habilitsLogos/trello.svg";
 import tailwind from "../assets/habilitsLogos/tailwindCSS.svg";
 import scrum from "../assets/habilitsLogos/scrum.svg";
 import figma from "../assets/habilitsLogos/figma.svg";
+import html from "../assets/habilitsLogos/html5.svg";
+import css from "../assets/habilitsLogos/css.svg";
 
 export const habilidades = [
     {
@@ -52,6 +54,16 @@ export const habilidades = [
         id: "4",
         name: "React",
         img: react,
+    },
+    {
+        id: "18",
+        name: "HTML",
+        img: html,
+    },
+    {
+        id: "19",
+        name: "CSS",
+        img: css,
     },
     {
         id: "5",
