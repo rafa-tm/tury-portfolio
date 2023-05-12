@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import HandCoding from "../assets/HandCoding.svg";
 import { MdStar } from "react-icons/md";
 import ProjectCard from "../components/ProjectCard";
@@ -39,26 +40,25 @@ export default function Home() {
   return (
     <main className="w-full bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
       <section className="w-full min-h-screen flex flex-col lg:flex-row py-32 px-10 gap-24 justify-center items-center ">
-        <div className="w-[90%] lg:w-[50%] text-left text-xl flex flex-col gap-6 items-left ">
-          <p className="text-2xl font-medium"> Olá, meu nome é </p>
+        <div className="w-[90%] lg:w-[50%] text-center text-xl flex flex-col gap-6 items-center">
+          <p className="text-2xl font-medium"> Hi, my name is </p>
           <h1 className="text-5xl font-black text-primary">
             Rafael Tury Minatel
           </h1>
           <p className="text-2xl font-medium">
-            Desenvolvedor Full Stack e Designer UI/UX
+            Full Stack Developer and UI/UX Designer
           </p>
           <div className="flex flex-col text-xl font-light gap-2">
             <p>
-              Sou apaixonado por tecnologia e pela criação de soluções para
-              melhorar a vida das pessoas, tenho trabalhado no desenvolvimento
-              de aplicações web de alta qualidade há mais de {anos} anos.
+              I'm passionate about technology and creating solutions that
+              improve people's lives. I have been working on high-quality web
+              applications for over {anos} years.
             </p>
             <p>
-              Minhas habilidades abrangem desde a concepção de interfaces de
-              usuário intuitivas e atraentes até o desenvolvimento de código
-              robusto e escalável. Se você está procurando um profissional
-              altamente qualificado para sua equipe ou projeto, não hesite em
-              entrar em contato comigo.
+              My skills range from designing intuitive and appealing user
+              interfaces to developing robust and scalable code. If you are
+              looking for a highly skilled professional for your team or
+              project, do not hesitate to contact me.
             </p>
           </div>
           <Button
@@ -66,7 +66,7 @@ export default function Home() {
             type={"primary"}
             className="p-4 max-w-xs mt-8"
           >
-            Entre em contato
+            Get in touch!
           </Button>
         </div>
         <img
@@ -91,14 +91,14 @@ export default function Home() {
 
       <section className="w-full flex px-10 py-32 gap-24 justify-center items-center ">
         <div className="w-[90%] flex flex-col items-center justify-between gap-24">
-          <h1 className="w-full text-4xl font-medium">Projetos recentes</h1>
+          <h1 className="w-full text-4xl font-medium">Recent Projects</h1>
           <div className="flex flex-col md:flex-wrap lg:flex-row gap-10 lg:gap-24 justify-center">
             <ProjectCard project={projetos[0]} />
             <ProjectCard project={projetos[1]} />
             <ProjectCard project={projetos[3]} />
           </div>
           <Button to={"/projetos"} type={"gradient"} className={"px-8 py-6 "}>
-            Ver todos os projetos
+            See all projects
           </Button>
         </div>
       </section>
@@ -106,7 +106,7 @@ export default function Home() {
       <section className="w-full flex flex-col lg:flex-row px-10 py-36 gap-24 justify-center items-center ">
         <div className="w-[90%] flex flex-col items-center justify-between gap-24">
           <h1 className="w-full text-4xl font-medium">
-            Habilidades, Tecnologias e Ferramentas
+            Skills, Technologies and Tools
           </h1>
           <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-y-24 gap-x-8 xl:gap-x-24 ">
             {habilidades.map((item) => (

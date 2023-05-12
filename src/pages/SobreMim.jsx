@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { habilidades } from "../utils/habilidades";
 import tury from "../assets/tury.jpg";
 import logotipoUShare from "../assets/projetos/LogotipoUshare.svg";
@@ -7,17 +8,17 @@ import Button from "../components/Button";
 
 export default function SobreMim() {
   return (
-    <main className="w-full flex flex-col py-56 gap-48 bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
+    <main className="w-full flex flex-col py-56 gap-48 bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText overflow-hidden">
       <section className="w-full flex flex-col px-4 lg:px-20 gap-16 items-center ">
         <div className="w-full flex items-start ml-40">
           <div className=" py-4 px-16 -skew-y-3 bg-gradient-to-r from-primary to-secondary">
             <div className="flex gap-4 py-2 px-6 font-bold bg-lightBackground-100 text-lightText dark:bg-lightBackground dark:text-lightText">
-              <h1 className="w-full text-4xl font-medium">Educação</h1>
+              <h1 className="w-full text-4xl font-medium">Education</h1>
             </div>
           </div>
         </div>
         {/* Card Educação */}
-        <div className="flex flex-col lg:flex-row gap-12 justify-center items-center px-32 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
+        <div className="flex flex-col lg:flex-row gap-12 justify-center items-center px-8 lg:px-32 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
           <img
             src="https://www.dche.ufscar.br/documentos/imagens/logo-ufscar.png"
             alt="Logotipo Ufscar"
@@ -25,9 +26,9 @@ export default function SobreMim() {
           />
           <div className="flex flex-col text-xl gap-3">
             <h2 className="font-bold text-2xl ">
-              Bacharelado em Engenharia de Computação
+              Bachelor's degree in Computer Engineering
             </h2>
-            <p>Universidade Federal de São Carlos</p>
+            <p>Federal University of São Carlos</p>
             <p>2019 - 2024</p>
           </div>
         </div>
@@ -37,93 +38,94 @@ export default function SobreMim() {
         <div className="w-full flex items-start ml-40">
           <div className="py-4 px-16 -skew-y-3 bg-gradient-to-r from-primary to-secondary">
             <div className="flex gap-4 py-2 px-6 font-bold bg-lightBackground-100 text-lightText dark:bg-lightBackground dark:text-lightText">
-              <h1 className="w-full text-4xl font-medium">Experiência</h1>
+              <h1 className="w-full text-4xl font-medium">Experience</h1>
             </div>
           </div>
         </div>
 
         {/* Card Experiencia 1 */}
-        <div className="flex flex-col lg:flex-row  gap-16 justify-center items-center px-24 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
+        <div className="flex flex-col lg:flex-row  gap-16 justify-center items-center px-8 lg:px-32 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
           <img
             src={logotipoUShare}
             alt="Logotipo uShare"
             className=" rounded-lg max-w-[194px]"
           />
-          <div className="  flex flex-col text-xl gap-3">
-            <h3 className="font-bold text-2xl ">Desenvolvedor Front-End</h3>
-            <p>Desenvolvimento utilizando Vite JS, React JS e TailwindCSS.</p>
-            <p>02/2023 - Atualmente</p>
+          <div className=" max-w-[552px] flex flex-col text-xl gap-3">
+            <h3 className="font-bold text-2xl ">Front-End Developer</h3>
+            <p>
+              Development of website using Vite JS, React JS, and TailwindCSS.
+            </p>
+            <p>Fev 2023 - Present</p>
           </div>
         </div>
 
         {/* Card Experiencia 2 */}
-        <div className="flex flex-col lg:flex-row  gap-16 justify-center items-start px-24 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
+        <div className="flex flex-col lg:flex-row  gap-16 justify-center items-start px-8 lg:px-32 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
           <img
             src={logotipoCATI}
-            alt="Logotipo uShare"
+            alt="Logotipo CATI Jr"
             className="bg-white rounded-lg p-2 max-w-[194px]"
           />
           <div className="max-w-[552px] flex flex-col gap-16 ">
             <div className="  flex flex-col text-xl gap-3">
-              <h3 className="font-bold text-2xl ">Desenvolvedor Full Stack</h3>
+              <h3 className="font-bold text-2xl ">Full Stack Developer</h3>
               <p>
-                Desenvolvimento utilizando Node JS, React JS, WordPress e outras
-                linguagens, aplicando através de metodologia Scrum.
+                Development using Node JS, React JS, WordPress, and other
+                languages, applying Scrum methodology.
               </p>
-              <p>12/2022 - Atualmente</p>
+              <p>Dec 2022 - Present</p>
             </div>
             <div className="  flex flex-col text-xl gap-3">
               <h3 className="font-bold text-2xl ">
-                Coordenador de Design e Marketing
+                Design and Marketing Coordinator
               </h3>
               <p>
-                Liderei a equipe como coordenador, ajudando na organização e
-                desenvolvimento de protótipos de interface, além de conduzir
-                treinamentos de design UI/UX para novos membros.
+                Led the team as coordinator, assisting in the organization and
+                development of interface prototypes, as well as conducting UI/UX
+                design training for new members.
               </p>
-              <p>12/2022 - 12/2022</p>
+              <p>Jun 2022 - Dec 2022</p>
             </div>
             <div className="  flex flex-col text-xl gap-3">
               <h3 className="font-bold text-2xl ">
-                Membro de Design e Marketing
+                Design and Marketing Member
               </h3>
               <p>
-                Design de vários protótipos de interfaces móveis e web com
-                Figma. Criação de conteúdo para redes sociais usando técnicas de
-                marketing, com os softwares Adobe Illustrator, Photoshop e
-                Canva.
+                Design of various mobile and web interface prototypes using
+                Figma. Creation of content for social media using marketing
+                techniques, with Adobe Illustrator, Photoshop, and Canva
+                software.
               </p>
-              <p>12/2022 - 12/2022</p>
+              <p>Nov 2021 - Jun 2022</p>
             </div>
           </div>
         </div>
 
         {/* Card Experiencia 3 */}
-        <div className="flex flex-col lg:flex-row  gap-16 justify-center items-center px-24 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
+        <div className="flex flex-col lg:flex-row  gap-16 justify-center items-center px-8 lg:px-32 py-8 rounded-2xl shadow-xl bg-lightBackground-100 dark:bg-darkBackground-100">
           <img
             src={logotipoCA}
-            alt="Logotipo uShare"
+            alt="Logotipo CAENC"
             className=" rounded-lg max-w-[194px]"
           />
           <div className="max-w-[552px] flex flex-col text-xl gap-3">
-            <h3 className="font-bold text-2xl ">Diretor de Comunicação</h3>
+            <h3 className="font-bold text-2xl ">Director of Communication</h3>
             <p>
-              Responsavel pela comunicação com outras entidades e alunos para
-              assuntos referentes ao Centro Acadêmico. Gerenciamento e criação
-              de conteúdo para as redes sociais utilizando Adobe Illustrator e
-              Photoshop.
+              Responsible for communication with other entities and students
+              regarding Academic Center matters. Management and creation of
+              content for social media using Adobe Illustrator and Photoshop.
             </p>
-            <p>09/2021 - Atualmente</p>
+            <p>Set 2021 - Jul 2022</p>
           </div>
         </div>
       </section>
 
       <section className="w-full flex flex-col px-4 lg:px-20 gap-24 items-center ">
-        <div className="w-full flex items-start ml-40">
-          <div className=" py-4 px-16 -skew-y-3 bg-gradient-to-r from-primary to-secondary">
+        <div className="w-full flex items-start ml-4">
+          <div className=" py-4 px-8 -skew-y-3 bg-gradient-to-r from-primary to-secondary">
             <div className="flex gap-4 py-2 px-6 font-bold bg-lightBackground-100 text-lightText dark:bg-lightBackground dark:text-lightText">
-              <h1 className="w-full text-4xl font-medium">
-                Habilidades, Tecnologias e Ferramentas
+              <h1 className="w-full text-2xl lg:text-4xl font-medium">
+                Skills, Technologies and Tools
               </h1>
             </div>
           </div>
@@ -150,7 +152,7 @@ export default function SobreMim() {
           <div className="flex flex-col lg:flex-row gap-12 justify-evenly items-center w-full">
             <div className="flex flex-col gap-4 py-2 text-5xl text-lightText ">
               <h2 className=" leading-relaxed font-medium text-center bg-lightBackground-100 dark:bg-lightBackground">
-                E quem é
+                And who is
               </h2>
               <h1 className="font-bold bg-darkBackground text-lightText bg-gradient-to-r from-primary to-secondary py-2 px-6 ">
                 Rafael Tury Minatel ?
@@ -167,39 +169,40 @@ export default function SobreMim() {
 
           <div className="w-[70%] text-2xl text-center flex flex-col gap-6">
             <p>
-              Nasci em Torrinha, uma cidade pequena do interior de São Paulo,
-              mas atualmente moro em São Carlos, onde estudo Engenharia de
-              Computação na Universidade Federal de São Carlos (UFSCar). Desde
-              que comecei minha graduação em Engenharia de Computação, tenho me
-              esforçado para aprender tudo o que posso sobre o mundo da
-              tecnologia, com o objetivo de me tornar um profissional completo e
-              capaz de criar soluções inovadoras para problemas complexos.
+              I was born in Torrinha, a small town in the interior of São Paulo,
+              but currently I live in São Carlos, where I study Computer
+              Engineering at the Federal University of São Carlos (UFSCar).
+              Since I started my undergraduate studies in Computer Engineering,
+              I have been striving to learn everything I can about the world of
+              technology, with the goal of becoming a complete professional
+              capable of creating innovative solutions for complex problems.
             </p>
             <p>
-              Minha jornada acadêmica tem sido repleta de desafios e
-              aprendizados, e tenho orgulho de dizer que consegui superá-los com
-              muita dedicação e trabalho duro. Durante meu curso, tive a
-              oportunidade de estudar disciplinas como Redes, Algoritmos e
-              Estruturas de Dados, Sistemas Operacionais, Inteligência
-              Artificial e Desenvolvimento Back-End e Front-End, e pude aplicar
-              esses conhecimentos em projetos práticos que me permitiram
-              desenvolver habilidades técnicas e interpessoais importantes.
+              My academic journey has been full of challenges and learning
+              opportunities, and I am proud to say that I have overcome them
+              with dedication and hard work. During my course, I had the
+              opportunity to study disciplines such as Networks, Algorithms and
+              Data Structures, Operating Systems, Artificial Intelligence, and
+              Back-End and Front-End Development, and I was able to apply this
+              knowledge in practical projects that allowed me to develop
+              important technical and interpersonal skills.
             </p>
             <p>
-              Além dos estudos, sou apaixonado por tecnologia e inovação, e
-              sempre busco me manter atualizado sobre as últimas tendências e
-              desenvolvimentos na área. Acredito que a tecnologia tem o poder de
-              transformar vidas e mudar o mundo, e quero ser parte dessa
-              transformação. Já participei de empresa júnior e centro acadêmico
-              dentro da universidade, o que me proporcionou uma experiência
-              valiosa em liderança, trabalho em equipe e resolução de problemas.
+              In addition to my studies, I am passionate about technology and
+              innovation, and I always seek to stay updated on the latest trends
+              and developments in the field. I believe that technology has the
+              power to transform lives and change the world, and I want to be
+              part of this transformation. I have already participated in a
+              junior company and an academic center within the university, which
+              provided me with valuable experience in leadership, teamwork, and
+              problem-solving.
             </p>
 
             <p>
-              Se você estiver procurando por um estudante dedicado, apaixonado e
-              com sede de conhecimento para ajudá-lo a criar soluções inovadoras
-              para problemas complexos, não hesite em entrar em contato comigo.
-              Adoraria discutir como posso ajudá-lo a alcançar seus objetivos!
+              If you are looking for a dedicated, passionate, and
+              knowledge-hungry student to help you create innovative solutions
+              for complex problems, do not hesitate to contact me. I would love
+              to discuss how I can help you achieve your goals!
             </p>
           </div>
         </div>
@@ -208,7 +211,7 @@ export default function SobreMim() {
           type={"primary"}
           className="px-8 py-4 max-w-md text-xl font-bold"
         >
-          Entre em contato
+          Get in touch
         </Button>
       </section>
     </main>
