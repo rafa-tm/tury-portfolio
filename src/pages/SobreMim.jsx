@@ -8,7 +8,7 @@ import Button from "../components/Button";
 
 export default function SobreMim() {
   return (
-    <main className="w-full flex flex-col py-56 gap-48 bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText overflow-hidden">
+    <main className="w-full min-h-screen flex flex-col py-56 gap-48 bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText overflow-hidden">
       <section className="w-full flex flex-col px-4 lg:px-20 gap-16 items-center ">
         <div className="w-full flex items-start ml-40">
           <div className=" py-4 px-16 -skew-y-3 bg-gradient-to-r from-primary to-secondary">

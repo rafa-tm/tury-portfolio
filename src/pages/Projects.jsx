@@ -24,7 +24,7 @@ export default function Projects() {
   }, [filtro]);
 
   return (
-    <main className=" w-full flex flex-col bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
+    <main className="min-h-screen w-full flex flex-col bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
       <section className="w-full flex flex-col px-4 lg:px-20 py-40 gap-16 justify-center items-center ">
         <div className="w-[95%] flex flex-col  gap-8 items-start justify-between">
           <h1 className="text-4xl font-medium">My Projects</h1>
