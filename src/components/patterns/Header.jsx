@@ -6,13 +6,6 @@ import { useState } from "react";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
-
   function toggleMenu() {
     setIsMenuOpen(!isMenuOpen);
   }
@@ -23,12 +16,7 @@ export default function Header() {
         "w-full fixed top-0 z-50 flex justify-between items-center px-12 lg:px-40 py-6 bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText"
       }
     >
-      <Button
-        to={"/"}
-        action={() => scrollToTop()}
-        type={"text"}
-        className={"text-lg"}
-      >
+      <Button to={"/"} type={"text"} className={"text-lg"}>
         <div className="bg-gradient-to-tr from-primary to-secondary text-lightText px-4 py-1 -skew-y-1">
           <span className="text-2xl">Tury</span>
           <span className="text-sm">.dev</span>
@@ -48,7 +36,7 @@ export default function Header() {
           className="fixed top-0 left-0 w-screen h-screen"
           onClick={() => toggleMenu()}
         >
-          <div className="absolute top-24 w-full h-full bg-lightBackground dark:bg-darkBackground">
+          <div className="absolute top-20 w-full h-full bg-lightBackground dark:bg-darkBackground">
             <nav className="flex flex-col gap-12 py-8 items-center ">
               <Button
                 to={"/"}
@@ -56,16 +44,16 @@ export default function Header() {
                 className={"text-lg"}
                 reloadDocument={true}
               >
-                Início
+                Home
               </Button>
               <Button to={"/projetos"} type={"text"} className={"text-lg"}>
-                Projetos
+                Projects
               </Button>
               <Button to={"/sobre"} type={"text"} className={"text-lg"}>
-                Sobre mim
+                About me
               </Button>
               <Button to={"/"} type={"primary"} className={"px-3 py-1 text-lg"}>
-                Contato
+                Contact
               </Button>
 
               <ThemeButton />
@@ -81,20 +69,20 @@ export default function Header() {
           className={"text-lg"}
           reloadDocument={true}
         >
-          Início
+          Home
         </Button>
         <Button to={"/projetos"} type={"text"} className={"text-lg"}>
-          Projetos
+          Projects
         </Button>
         <Button to={"/sobre"} type={"text"} className={"text-lg"}>
-          Sobre mim
+          About me
         </Button>
         <Button
           to={"/contato"}
           type={"primary"}
           className={"px-3 py-1 text-lg"}
         >
-          Contato
+          Contact
         </Button>
 
         <ThemeButton />

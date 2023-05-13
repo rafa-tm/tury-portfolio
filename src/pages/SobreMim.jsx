@@ -167,7 +167,7 @@ export default function SobreMim() {
             />
           </div>
 
-          <div className="w-[70%] text-2xl text-center flex flex-col gap-6">
+          <div className="w-[80%] text-2xl text-center flex flex-col gap-6">
             <p>
               I was born in Torrinha, a small town in the interior of São Paulo,
               but currently I live in São Carlos, where I study Computer

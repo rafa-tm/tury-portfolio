@@ -7,31 +7,31 @@ import { habilidades } from "../utils/habilidades";
 import projetos from "../utils/projetos";
 
 const softSkills = [
-  { id: 1, palavra: "Pensamento crítico" },
-  { id: 2, palavra: "Trabalho em equipe" },
-  { id: 3, palavra: "Resolução de problemas" },
-  { id: 4, palavra: "Liderança" },
-  { id: 5, palavra: "Comunicação" },
-  { id: 6, palavra: "Adaptabilidade" },
-  { id: 7, palavra: "Iniciativa" },
-  { id: 8, palavra: "Criatividade" },
-  { id: 9, palavra: "Capacidade de aprender rapidamente" },
-  { id: 10, palavra: "Atenção aos detalhes" },
-  { id: 11, palavra: "Organização" },
-  { id: 12, palavra: "Resiliência" },
-  { id: 13, palavra: "Colaboração" },
-  { id: 14, palavra: "Empatia" },
-  { id: 15, palavra: "Flexibilidade" },
-  { id: 16, palavra: "Gerenciamento de tempo" },
-  { id: 17, palavra: "Capacidade de seguir instruções" },
-  { id: 18, palavra: "Compreensão de requisitos de negócios" },
-  { id: 19, palavra: "Senso de responsabilidade" },
-  { id: 20, palavra: "Capacidade de lidar com pressão" },
-  { id: 21, palavra: "Proatividade" },
-  { id: 22, palavra: "Autodisciplina" },
-  { id: 23, palavra: "Compreensão de processos" },
-  { id: 24, palavra: "Capacidade de trabalhar sob supervisão" },
-  { id: 25, palavra: "Compreensão de tecnologia" },
+  { id: 1, word: "Critical thinking" },
+  { id: 2, word: "Teamwork" },
+  { id: 3, word: "Problem-solving" },
+  { id: 4, word: "Leadership" },
+  { id: 5, word: "Communication" },
+  { id: 6, word: "Adaptability" },
+  { id: 7, word: "Initiative" },
+  { id: 8, word: "Creativity" },
+  { id: 9, word: "Fast learning ability" },
+  { id: 10, word: "Attention to detail" },
+  { id: 11, word: "Organization" },
+  { id: 12, word: "Resilience" },
+  { id: 13, word: "Collaboration" },
+  { id: 14, word: "Empathy" },
+  { id: 15, word: "Flexibility" },
+  { id: 16, word: "Time management" },
+  { id: 17, word: "Ability to follow instructions" },
+  { id: 18, word: "Understanding of business requirements" },
+  { id: 19, word: "Sense of responsibility" },
+  { id: 20, word: "Ability to handle pressure" },
+  { id: 21, word: "Proactivity" },
+  { id: 22, word: "Self-discipline" },
+  { id: 23, word: "Understanding of processes" },
+  { id: 24, word: "Ability to work under supervision" },
+  { id: 25, word: "Understanding of technology" },
 ];
 
 export default function Home() {
@@ -63,8 +63,8 @@ export default function Home() {
           </div>
           <Button
             to={"/contato"}
-            type={"primary"}
-            className="p-4 max-w-xs mt-8"
+            type={"gradient"}
+            className="px-10 py-4 text-xl max-w-xs mt-8"
           >
             Get in touch!
           </Button>
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="flex gap-4 h-16 font-bold absolute bottom-12 -skew-y-1 antialiased bg-darkBackground text-darkText  dark:bg-lightBackground dark:text-lightText">
           {softSkills.map((item) => (
             <div key={item.id} className="flex items-center gap-4">
-              <p className="min-w-max text-xl">{item.palavra} </p>
+              <p className="min-w-max text-xl">{item.word} </p>
               <MdStar className="text-tertiary" />
             </div>
           ))}

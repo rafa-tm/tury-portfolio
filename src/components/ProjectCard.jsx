@@ -52,7 +52,7 @@ export default function ProjectCard({ project }) {
               target={"_blank"}
               rel={"noopener noreferrer"}
             >
-              <span>Visitar</span>
+              <span>Visit</span>
               <MdOpenInNew />
             </Button>
           ) : (
@@ -63,7 +63,7 @@ export default function ProjectCard({ project }) {
               target={"_blank"}
               rel={"noopener noreferrer"}
             >
-              <span>Visitar</span>
+              <span>Visit</span>
               <MdOpenInNew />
             </Button>
           )}
@@ -91,7 +91,7 @@ export default function ProjectCard({ project }) {
                 target={"_blank"}
                 rel={"noopener noreferrer"}
               >
-                <span>Projeto privado</span>
+                <span>Private project</span>
                 <FaLock />
               </Button>
             )

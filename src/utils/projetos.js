@@ -19,7 +19,7 @@ const projetos = [
     title: "uShare",
     category: ["Front-End", "CSR"],
     description:
-      "uShare é um sistema para universitários encontrarem e/ou compartilharem imóveis. Facilitando a vida de quem está procurando um lugar para morar, de quem está procurando alguém para dividir o aluguel ou proprietários/imobiliárias buscando divulgar melhor seus imóveis.",
+      "uShare is a system for university students to find and/or share properties, making it easier for those looking for a place to live, those looking for someone to share rent with, or landlords/real estate agents seeking to better promote their properties.",
     tecnologias: ["React JS", "TailwindCSS", "Axios", "Vite"],
     imagem: ushare,
     imagemAlt: "Imagem do site uShare",
@@ -31,7 +31,7 @@ const projetos = [
     title: "LifeCare",
     category: ["Front-End", "CSR"],
     description:
-      "LifeCare é um projeto de sistema web para o agendamento de consultas com profissionais cadastrados. Permitindo cadastramento de usuários, profissionais e especialidades. O sistema também permite a busca de profissionais por area e especialidade.",
+      "LifeCare is a web system project for scheduling appointments with registered professionals. It allows for the registration of users, professionals, and specialties. The system also enables searching for professionals by area and specialty.",
     tecnologias: ["React JS", "TailwindCSS", "Axios", "Vite"],
     imagem: lifecarefront,
     imagemAlt: "Imagem do sistema LifeCare",
@@ -43,7 +43,7 @@ const projetos = [
     title: "LifeCare",
     category: ["Back-End", "API"],
     description:
-      "Back-end do sistema LifeCare, desenvolvido com o intuito de servir para API para o LifeCare Front-End. Desenvolvido utilizando arquitetura de funções ou Function-as-a-Service (FaaS), com o framework Fastfy. ",
+      "The back-end of the LifeCare system was developed with the purpose of serving as an API for the LifeCare front-end. It was developed using a function-based architecture or Function-as-a-Service (FaaS), with the Fastify framework.",
     tecnologias: ["Node JS", "TypeScript", "Fastfy", "Zod", "SQLite", "Prisma"],
     imagem: lifecareback,
     imagemAlt: "Imagem do sistema LifeCare",
@@ -55,7 +55,7 @@ const projetos = [
     title: "LifeCare",
     category: ["Back-End", "Front-End", "API", "SSR"],
     description:
-      "Desenvolvimento do projeto LifeCare usando arquitetura MVC, inicialmente utilizando Java Servlet. Uma segunda implementação com o framework Spring Boot. E a implementação final, possuindo requisições como API para o LifeCare Front-End.",
+      "The LifeCare project was developed using the MVC architecture, initially using Java Servlet. A second implementation was done using the Spring Boot framework. The final implementation involved requests as an API for the LifeCare front-end.",
     tecnologias: [
       "Java",
       "Servlet",
@@ -76,7 +76,7 @@ const projetos = [
     title: "Trabalho DSW2",
     category: ["Front-End", "Static"],
     description:
-      "Implementação de páginas estáticas apenas com HTML, CSS e JavaScript, realizado anteriormente ao LifeCare CSR. O projeto foi desenvolvido com o intuito de mostrar o uso de HTML, CSS e JavaScript puro.",
+      "Implementation of static pages using only HTML, CSS, and JavaScript was carried out prior to LifeCare CSR. The project was developed with the purpose of showcasing the use of pure HTML, CSS, and JavaScript.",
     tecnologias: ["HTML", "CSS", "JavaScript"],
     imagem: lifecarestatic,
     imagemAlt: "Imagem do sistema LifeCare",
@@ -88,7 +88,7 @@ const projetos = [
     title: "Arquitetura-CSS",
     category: ["Front-End"],
     description:
-      "Projeto de arquitetura CSS, com o intuito de mostrar a importância de uma boa arquitetura CSS. O projeto foi desenvolvido com HTML e CSS puro, com aplicação de metodologias como BEM e Atomic Design.",
+      "A CSS architecture project was developed with the purpose of demonstrating the importance of good CSS architecture. The project was developed using pure HTML and CSS, with the application of methodologies such as BEM and Atomic Design.",
     tecnologias: ["HTML", "CSS"],
     imagem: arquiteturaCSS,
     imagemAlt: "Imagem do sistema LifeCare",
@@ -100,7 +100,7 @@ const projetos = [
     title: "Site Pessoal",
     category: ["Front-End"],
     description:
-      "Este site foi desenvolvido com o intuito de mostrar meus projetos e habilidades. E também para servir como um portfólio, para que pessoas possam conhecer um pouco mais sobre mim e meus projetos. Site hospedado na Netlify, através do GitHub.",
+      "This website was developed with the purpose of showcasing my projects and skills. It also serves as a portfolio, so that people can learn a little more about me and my projects. The site is hosted on Netlify, through GitHub.",
     tecnologias: ["React JS", "TailwindCSS", "Vite", "JavaScript"],
     imagem: portfolio,
     imagemAlt: "Imagem do sistema LifeCare",
@@ -112,7 +112,7 @@ const projetos = [
     title: "OmniStack",
     category: ["Back-End", "Front-End", "Mobile", "API"],
     description:
-      "Projeto desenvolvido durante a semana OmniStack 11.0, com o intuito de aprender a desenvolver uma aplicação completa, com back-end, front-end e mobile. O projeto consiste em um sistema para ONGs cadastrarem casos e pessoas poderem contribuir com os casos.",
+      "The project was developed during the OmniStack 11.0 week with the aim of learning how to develop a complete application, including back-end, front-end, and mobile. The project consists of a system for NGOs to register cases and for people to contribute to these cases.",
     tecnologias: ["Node JS", "React JS", "React Native", "SQLite"],
     imagem: omniStack,
     imagemAlt: "Imagem do sistema LifeCare",
@@ -125,7 +125,7 @@ const projetos = [
     title: "uShare",
     category: ["UI/UX"],
     description:
-      "uShare é um sistema para universitários encontrarem e/ou compartilharem imóveis. Facilitando a vida de quem está procurando um lugar para morar, de quem está procurando alguém para dividir o aluguel ou proprietários/imobiliárias buscando divulgar melhor seus imóveis.",
+      "uShare is a system designed for university students to find and/or share properties, making it easier for those who are searching for a place to live, those who are looking for someone to split the rent with, or for landlords/real estate agencies seeking to better promote their properties.",
     tecnologias: ["Figma"],
     imagem: usharePrototipo,
     imagemAlt: "Imagem do protótipo uShare",
@@ -138,7 +138,7 @@ const projetos = [
     title: "SeAche",
     category: ["UI/UX"],
     description:
-      "SeAche é um aplicativo para facilitar a localização dentro da universidade, com o intuito de ajudar os alunos a encontrarem salas, trailers de alimentação e o restaurante universitário.",
+      "SeAche is an application designed to facilitate navigation within the university, with the aim of helping students find classrooms, food trailers, and the university restaurant.",
     tecnologias: ["Figma", "Adobe Illustrator"],
     imagem: seAchePrototipo,
     imagemAlt: "Imagem do protótipo SeAche",
@@ -151,7 +151,7 @@ const projetos = [
     title: "ChecAPP",
     category: ["UI/UX"],
     description:
-      "Aplicativo para que qualquer pessoa possa realizar o salvamento de todos seus exames e compartilhamento destes com qualquer profissional cadastrado no sistema.",
+      "An application that allows anyone to save and share all of their medical exams with any professional registered in the system.",
     tecnologias: ["Figma", "AutoLayout"],
     imagem: checappPrototipo,
     imagemAlt: "Imagem do protótipo ChecAPP",
@@ -164,7 +164,7 @@ const projetos = [
     title: "Escavatto",
     category: ["UI/UX"],
     description:
-      "Sistema web que possibilita que clientes façam a contratação de máquinas e implementos de obras de fornecedores cadastrados no sistema.",
+      "A web system that allows clients to hire construction machinery and equipment from registered suppliers in the system.",
     tecnologias: ["Figma"],
     imagem: escavattoPrototipo,
     imagemAlt: "Imagem do protótipo Escavatto",
@@ -178,7 +178,7 @@ const projetos = [
     title: "LifeCare",
     category: ["UI/UX"],
     description:
-      "LifeCare é um projeto de sistema web para o agendamento de consultas com profissionais cadastrados. Permitindo cadastramento de usuários, profissionais e especialidades. O sistema também permite a busca de profissionais por area e especialidade.",
+      "LifeCare is a web-based system project for scheduling appointments with registered professionals. It allows for the registration of users, professionals, and specialties. The system also enables the search for professionals by area and specialty.",
     tecnologias: ["Figma"],
     imagem: lifecarefront,
     imagemAlt: "Imagem do sistema LifeCare",

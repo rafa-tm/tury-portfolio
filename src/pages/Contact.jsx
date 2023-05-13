@@ -32,7 +32,7 @@ export default function Contact() {
             Fill out the form below and I will contact you as soon as possible.
           </h3>
         </div>
-        <div className="w-1/2 rounded-2xl py-12 px-10 flex flex-col text-darkText bg-darkBackground-100">
+        <div className="w-[90%] lg:w-1/2 rounded-2xl py-12 px-10 flex flex-col text-darkText bg-darkBackground-100">
           <form
             onSubmit={handleSubmit}
             className="w-full flex flex-col gap-8 items-center"
@@ -71,7 +71,7 @@ export default function Contact() {
               required={true}
               placeholder={"White your message here"}
             />
-            <Button type="primary" className="w-1/2 py-4 text-xl">
+            <Button type="primary" className="w-1/2 py-4 text-xl max-w-lg">
               <input type="submit" value="Enviar" />
             </Button>
           </form>
