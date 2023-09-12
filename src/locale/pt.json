@@ -1,0 +1,58 @@
+{
+  "translation": {
+    "en": "Inglês",
+    "pt": "Português",
+    "header.home": "Início",
+    "header.about": "Sobre mim",
+    "header.contact": "Contato",
+    "header.resume": "Currículo",
+    "header.projects": "Projetos",
+    "education": "Educação",
+    "experience": "Experiências",
+    "skills": "Linguagens, Habilidades e Ferramentas",
+    "callWhoIs": "E quem é",
+    "callResume": "Veja meu currículo profissional",
+    "downloadResume": "Baixar Currículo em PDF",
+    "whoIs": [
+      "Eu nasci em Torrinha, uma pequena cidade no interior de São Paulo, mas atualmente moro em São Carlos, onde estudo Engenharia da Computação na Universidade Federal de São Carlos (UFSCar). Desde que comecei meus estudos de graduação em Engenharia da Computação, tenho me esforçado para aprender tudo o que posso sobre o mundo da tecnologia, com o objetivo de me tornar um profissional completo capaz de criar soluções inovadoras para problemas complexos.",
+      "Minha jornada acadêmica tem sido repleta de desafios e oportunidades de aprendizado, e estou orgulhoso de dizer que os superei com dedicação e trabalho árduo. Durante meu curso, tive a oportunidade de estudar disciplinas como Redes, Algoritmos e Estruturas de Dados, Sistemas Operacionais, Inteligência Artificial e Desenvolvimento Back-End e Front-End, e pude aplicar esse conhecimento em projetos práticos que me permitiram desenvolver habilidades técnicas e interpessoais importantes.",
+      "Além dos meus estudos, sou apaixonado por tecnologia e inovação, e sempre busco me manter atualizado nas últimas tendências e desenvolvimentos na área. Acredito que a tecnologia tem o poder de transformar vidas e mudar o mundo, e quero fazer parte dessa transformação. Já participei de uma empresa júnior e de um centro acadêmico dentro da universidade, o que me proporcionou valiosa experiência em liderança, trabalho em equipe e resolução de problemas.",
+      "Se você está procurando um estudante dedicado, apaixonado e ávido por conhecimento para ajudar a criar soluções inovadoras para problemas complexos, não hesite em entrar em contato comigo. Adoraria discutir como posso ajudá-lo a alcançar seus objetivos!"
+    ],
+    "resume.items": [
+      {
+        "title": "Desenvolvedor Front-End",
+        "description": "Desenvolvimento de sites usando Vite JS, React JS e TailwindCSS.",
+        "period": "Fev 2023 - Presente"
+      },
+      {
+        "title": "Desenvolvedor Full Stack",
+        "description": "Desenvolvimento usando Node JS, React JS, WordPress e outras linguagens, aplicando a metodologia Scrum.",
+        "period": "Dez 2022 - Presente"
+      },
+      {
+        "title": "Coordenador de Design UI/UX",
+        "description": "Liderou a equipe como coordenador, auxiliando na organização e desenvolvimento de protótipos de interface, além de ministrar treinamento de design UI/UX para novos membros.",
+        "period": "Jun 2022 - Dez 2022"
+      },
+      {
+        "title": "Membro de Design UI/UX e Marketing",
+        "description": "Design de vários protótipos de interfaces móveis e web usando o Figma. Criação de conteúdo para mídias sociais usando técnicas de marketing, com os softwares Adobe Illustrator, Photoshop e Canva.",
+        "period": "Nov 2021 - Jun 2022"
+      },
+      {
+        "title": "Diretor de Comunicação",
+        "description": "Responsável pela comunicação com outras entidades e estudantes em relação a assuntos do Centro Acadêmico. Gerenciamento e criação de conteúdo para mídias sociais usando Adobe Illustrator e Photoshop.",
+        "period": "Set 2021 - Jul 2022"
+      }
+    ],
+    "education.items": [
+      {
+        "title": "Engenharia da Computação",
+        "description": "Universidade Federal de São Carlos (UFSCar)",
+        "period": "2019 - 2024"
+      }
+    ],
+    "footer": "Design e Desenvolvimento por Rafael Tury"
+  }
+}

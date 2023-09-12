@@ -1,0 +1,58 @@
+{
+  "translation": {
+    "en": "English",
+    "pt": "Portuguese",
+    "header.home": "Home",
+    "header.about": "About me",
+    "header.contact": "Contact",
+    "header.resume": "Resume",
+    "header.projects": "Projects",
+    "education": "Education",
+    "experience": "Experiences",
+    "skills": "Languages, Skills and Tools",
+    "callWhoIs": "And who is",
+    "callResume": "See my professional resume",
+    "downloadResume": "Download PDF Resume",
+    "whoIs": [
+      "I was born in Torrinha, a small town in the interior of São Paulo, but currently I live in São Carlos, where I study Computer Engineering at the Federal University of São Carlos (UFSCar). Since I started my undergraduate studies in Computer Engineering, I have been striving to learn everything I can about the world of technology, with the goal of becoming a complete professional capable of creating innovative solutions for complex problems.",
+      "My academic journey has been full of challenges and learning opportunities, and I am proud to say that I have overcome them with dedication and hard work. During my course, I had the opportunity to study disciplines such as Networks, Algorithms and Data Structures, Operating Systems, Artificial Intelligence, and Back-End and Front-End Development, and I was able to apply this knowledge in practical projects that allowed me to develop important technical and interpersonal skills.",
+      "In addition to my studies, I am passionate about technology and innovation, and I always seek to stay updated on the latest trends and developments in the field. I believe that technology has the power to transform lives and change the world, and I want to be part of this transformation. I have already participated in a junior company and an academic center within the university, which provided me with valuable experience in leadership, teamwork, and problem-solving.",
+      "If you are looking for a dedicated, passionate, and knowledge-hungry student to help you create innovative solutions for complex problems, do not hesitate to contact me. I would love to discuss how I can help you achieve your goals!"
+    ],
+    "resume.items": [
+      {
+        "title": "Front-End Developer",
+        "description": "Development of website using Vite JS, React JS, and TailwindCSS.",
+        "period": "Fev 2023 - Present"
+      },
+      {
+        "title": "Full Stack Developer",
+        "description": "Development using Node JS, React JS, WordPress, and other languages, applying Scrum methodology.",
+        "period": "Dec 2022 - Present"
+      },
+      {
+        "title": "Design UI/UX Coordinator",
+        "description": "Led the team as coordinator, assisting in the organization and development of interface prototypes, as well as conducting UI/UX design training for new members.",
+        "period": "Jun 2022 - Dec 2022"
+      },
+      {
+        "title": "Design UI/UX and Marketing Member",
+        "description": "Design of various mobile and web interface prototypes using Figma. Creation of content for social media using marketing techniques, with Adobe Illustrator, Photoshop, and Canva software.",
+        "period": "Nov 2021 - Jun 2022"
+      },
+      {
+        "title": "Director of Communication",
+        "description": "Responsible for communication with other entities and students regarding Academic Center matters. Management and creation of content for social media using Adobe Illustrator and Photoshop.",
+        "period": "Set 2021 - Jul 2022"
+      }
+    ],
+    "education.items": [
+      {
+        "title": "Computer Engineering",
+        "description": "Federal University of São Carlos (UFSCar)",
+        "period": "2019 - 2024"
+      }
+    ],
+    "footer": "Design and Development by Rafael Tury"
+  }
+}

@@ -6,34 +6,6 @@ import Button from "../components/Button";
 import { habilidades } from "../utils/habilidades";
 import projetos from "../utils/projetos";
 
-const softSkills = [
-  { id: 1, word: "Critical thinking" },
-  { id: 2, word: "Teamwork" },
-  { id: 3, word: "Problem-solving" },
-  { id: 4, word: "Leadership" },
-  { id: 5, word: "Communication" },
-  { id: 6, word: "Adaptability" },
-  { id: 7, word: "Initiative" },
-  { id: 8, word: "Creativity" },
-  { id: 9, word: "Fast learning ability" },
-  { id: 10, word: "Attention to detail" },
-  { id: 11, word: "Organization" },
-  { id: 12, word: "Resilience" },
-  { id: 13, word: "Collaboration" },
-  { id: 14, word: "Empathy" },
-  { id: 15, word: "Flexibility" },
-  { id: 16, word: "Time management" },
-  { id: 17, word: "Ability to follow instructions" },
-  { id: 18, word: "Understanding of business requirements" },
-  { id: 19, word: "Sense of responsibility" },
-  { id: 20, word: "Ability to handle pressure" },
-  { id: 21, word: "Proactivity" },
-  { id: 22, word: "Self-discipline" },
-  { id: 23, word: "Understanding of processes" },
-  { id: 24, word: "Ability to work under supervision" },
-  { id: 25, word: "Understanding of technology" },
-];
-
 export default function Home() {
   const anos = new Date().getFullYear() - 2020;
 
@@ -76,31 +48,6 @@ export default function Home() {
           height={448}
           className="max-w-xs lg:max-w-md animate-scale"
         />
-      </section>
-
-      <div className="w-full h-24 my-24 sm:flex items-center hidden relative bg-gradient-to-r from-primary to-secondary overflow-x-clip">
-        <div className="flex gap-4 h-16 font-bold absolute bottom-12 -skew-y-1 antialiased bg-darkBackground text-darkText  dark:bg-lightBackground dark:text-lightText">
-          {softSkills.map((item) => (
-            <div key={item.id} className="flex items-center gap-4">
-              <p className="min-w-max text-xl">{item.word} </p>
-              <MdStar className="text-tertiary" />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <section className="w-full flex px-10 py-32 gap-24 justify-center items-center ">
-        <div className="w-[90%] flex flex-col items-center justify-between gap-24">
-          <h1 className="w-full text-4xl font-medium">Recent Projects</h1>
-          <div className="flex flex-col md:flex-wrap lg:flex-row gap-10 lg:gap-24 justify-center">
-            <ProjectCard project={projetos[0]} />
-            <ProjectCard project={projetos[1]} />
-            <ProjectCard project={projetos[3]} />
-          </div>
-          <Button to={"/projetos"} type={"gradient"} className={"px-8 py-6 "}>
-            See all projects
-          </Button>
-        </div>
       </section>
 
       <section className="w-full flex flex-col lg:flex-row px-10 py-36 gap-24 justify-center items-center ">
