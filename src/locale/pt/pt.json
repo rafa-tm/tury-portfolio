@@ -7,11 +7,18 @@
     "header.contact": "Contato",
     "header.resume": "Currículo",
     "header.projects": "Projetos",
-    "education": "Educação",
-    "experience": "Experiências",
+    "title.education": "Educação",
+    "title.experience": "Experiências",
+    "title.projects": "Meus Projetos",
     "skills": "Linguagens, Habilidades e Ferramentas",
     "callWhoIs": "E quem é",
     "callResume": "Veja meu currículo profissional",
+    "callHome": "Olá, meu nome é",
+    "callHome2": "Desenvolvedor Stack e Designer UI/UX",
+    "callHome3": [
+      "Sou apaixonado por tecnologia e pela criação de soluções que melhoram a vida das pessoas. Tenho trabalhado em aplicações web de qualidade por mais de {{years}} anos..",
+      "Minhas habilidades vão desde o design de interfaces intuitivas e atraentes até o desenvolvimento de código robusto e escalável. Se você está procurando um profissional altamente qualificado para a sua equipe ou projeto, não hesite em entrar em contato comigo."
+    ],
     "downloadResume": "Baixar Currículo em PDF",
     "whoIs": [
       "Eu nasci em Torrinha, uma pequena cidade no interior de São Paulo, mas atualmente moro em São Carlos, onde estudo Engenharia da Computação na Universidade Federal de São Carlos (UFSCar). Desde que comecei meus estudos de graduação em Engenharia da Computação, tenho me esforçado para aprender tudo o que posso sobre o mundo da tecnologia, com o objetivo de me tornar um profissional completo capaz de criar soluções inovadoras para problemas complexos.",
@@ -53,6 +60,10 @@
         "period": "2019 - 2024"
       }
     ],
+    "projects.filter": "Filtrar por area:",
+    "projects.filterLabel": "Selecione uma área",
+    "projects.filterWarning": "Nenhum projeto encontrado com essa área",
+    "projects.filterBox": "Exibindo projetos de {{filter}}",
     "footer": "Design e Desenvolvimento por Rafael Tury"
   }
 }

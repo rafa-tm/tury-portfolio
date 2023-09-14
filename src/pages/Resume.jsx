@@ -20,7 +20,7 @@ export default function SobreMim() {
       <section className="w-full flex flex-col gap-16 items-center ">
         <div className="w-full bg-primary -skew-y-1 py-3 flex items-center justify-center shadow-lg mb-6">
           <div className="w-full bg-lightBackground-100 py-3 flex items-center justify-center shadow-lg">
-            <h1 className="text-4xl font-medium">{t("education")}</h1>
+            <h1 className="text-4xl font-medium">{t("title.education")}</h1>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ export default function SobreMim() {
       <section className="w-full flex flex-col gap-16 items-center ">
         <div className="w-full bg-secondary skew-y-1 py-3 flex items-center justify-center shadow-lg mb-6">
           <div className="w-full bg-lightBackground-100 py-3 flex items-center justify-center shadow-lg">
-            <h1 className="text-4xl font-medium">{t("experience")}</h1>
+            <h1 className="text-4xl font-medium">{t("title.experience")}</h1>
           </div>
         </div>
 
@@ -59,40 +59,36 @@ export default function SobreMim() {
           <ResumeCard
             logotipo={logotipoCATI}
             resume={{
-              title: "Full Stack Developer",
-              description:
-                "Development using Node JS, React JS, WordPress, and other languages, applying Scrum methodology.",
-              period: "Dec 2022 - Present",
+              title: t("resume.items.1.title"),
+              description: t("resume.items.1.description"),
+              period: t("resume.items.1.period"),
             }}
           />
           {/* Card */}
           <ResumeCard
             logotipo={logotipoCATI}
             resume={{
-              title: "Design UI/UX Coordinator",
-              description:
-                "Led the team as coordinator, assisting in the organization and development of interface prototypes, as well as conducting UI/UX design training for new members.",
-              period: "Jun 2022 - Dec 2022",
+              title: t("resume.items.2.title"),
+              description: t("resume.items.2.description"),
+              period: t("resume.items.2.period"),
             }}
           />
           {/* Card */}
           <ResumeCard
             logotipo={logotipoCATI}
             resume={{
-              title: "Design UI/UX and Marketing Member",
-              description:
-                "Design of various mobile and web interface prototypes using Figma. Creation of content for social media using marketing techniques, with Adobe Illustrator, Photoshop, and Canva software.",
-              period: "Nov 2021 - Jun 2022",
+              title: t("resume.items.3.title"),
+              description: t("resume.items.3.description"),
+              period: t("resume.items.3.period"),
             }}
           />
           {/* Card */}
           <ResumeCard
             logotipo={logotipoCA}
             resume={{
-              title: "Director of Communication",
-              description:
-                "Responsible for communication with other entities and students regarding Academic Center matters. Management and creation of content for social media using Adobe Illustrator and Photoshop.",
-              period: "Set 2021 - Jul 2022",
+              title: t("resume.items.4.title"),
+              description: t("resume.items.4.description"),
+              period: t("resume.items.4.period"),
             }}
           />
         </div>

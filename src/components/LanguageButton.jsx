@@ -17,7 +17,11 @@ export default function LanguageButton() {
 
   return (
     <div>
-      <Button type={"text"} action={handleChangeLanguage}>
+      <Button
+        className={"min-w-[120px]"}
+        type={"text"}
+        action={handleChangeLanguage}
+      >
         {currentLanguage === "en" ? (
           <div className="flex gap-2">
             <US className="w-6" />

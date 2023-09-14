@@ -7,11 +7,18 @@
     "header.contact": "Contact",
     "header.resume": "Resume",
     "header.projects": "Projects",
-    "education": "Education",
-    "experience": "Experiences",
+    "title.education": "Education",
+    "title.experience": "Experiences",
+    "title.projects": "My Projects",
     "skills": "Languages, Skills and Tools",
     "callWhoIs": "And who is",
     "callResume": "See my professional resume",
+    "callHome": "Hi, my name is",
+    "callHome2": "Full Stack Developer and UI/UX Designer",
+    "callHome3": [
+      "I'm passionate about technology and creating solutions that improve people's lives. I have been working on web applications for over {{years}} years.",
+      "My skills range from designing intuitive and appealing user interfaces to developing robust and scalable code. If you are looking for a highly skilled professional for your team or project, do not hesitate to contact me."
+    ],
     "downloadResume": "Download PDF Resume",
     "whoIs": [
       "I was born in Torrinha, a small town in the interior of São Paulo, but currently I live in São Carlos, where I study Computer Engineering at the Federal University of São Carlos (UFSCar). Since I started my undergraduate studies in Computer Engineering, I have been striving to learn everything I can about the world of technology, with the goal of becoming a complete professional capable of creating innovative solutions for complex problems.",
@@ -53,6 +60,10 @@
         "period": "2019 - 2024"
       }
     ],
+    "projects.filter": "Filter by area:",
+    "projects.filterLabel": "Select an area",
+    "projects.filterWarning": "No projects found with this filter",
+    "projects.filterBox": "Showing {{filter}} projects",
     "footer": "Design and Development by Rafael Tury"
   }
 }

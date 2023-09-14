@@ -5,14 +5,9 @@ import { FaFigma, FaGithub, FaLock } from "react-icons/fa";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="max-w-[25rem] flex flex-col shadow-lg rounded-xl bg-lightBackground-100 dark:bg-darkBackground-100 overflow-hidden ">
-      <div className="min-h-[16rem] w-full relative">
-        <img
-          src={project.imagem}
-          alt={project.imagemAlt}
-          width={400}
-          height={226}
-        />
+    <div className="w-full flex flex-col shadow-lg rounded-xl border-slate-200 border-2 bg-lightBackground-100 dark:bg-darkBackground-100 overflow-hidden ">
+      <div className="w-full relative">
+        <img src={project.imagem} alt={project.imagemAlt} />
         <div className="absolute bottom-0 right-0 flex gap-2 bg-lightBackground-100 dark:bg-darkBackground-100 px-4 py-2 items-center rounded-tl-lg ">
           {project.category.map((category) => (
             <span
