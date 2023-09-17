@@ -1,9 +1,9 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 import { BR, US } from "country-flag-icons/react/3x2";
 import Button from "./Button";
 import { FaLanguage } from "react-icons/fa";
-import { useEffect } from "react";
 
 export default function LanguageButton({ className }) {
   const {
@@ -16,20 +16,6 @@ export default function LanguageButton({ className }) {
     changeLanguage(language);
     setShowOptions(false);
   };
-
-  useEffect(() => {
-    function detectLanguage() {
-      let language = navigator.language || navigator.userLanguage;
-      language = language.slice(0, 2);
-      if (language === "pt") {
-        changeLanguage("pt");
-      } else {
-        changeLanguage("en");
-      }
-    }
-    detectLanguage();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <div className={`${className} flex flex-col items-center`}>
@@ -81,3 +67,7 @@ export default function LanguageButton({ className }) {
     </div>
   );
 }
+
+LanguageButton.propTypes = {
+  className: PropTypes.string,
+};
