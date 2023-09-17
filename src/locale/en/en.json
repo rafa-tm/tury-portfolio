@@ -2,24 +2,42 @@
   "translation": {
     "en": "English",
     "pt": "Portuguese",
-    "header.home": "Home",
-    "header.about": "About me",
-    "header.contact": "Contact",
-    "header.resume": "Resume",
-    "header.projects": "Projects",
-    "title.education": "Education",
-    "title.experience": "Experiences",
-    "title.projects": "My Projects",
-    "skills": "Languages, Skills and Tools",
-    "callWhoIs": "And who is",
-    "callResume": "See my professional resume",
-    "callHome": "Hi, my name is",
-    "callHome2": "Full Stack Developer and UI/UX Designer",
-    "callHome3": [
-      "I'm passionate about technology and creating solutions that improve people's lives. I have been working on web applications for over {{years}} years.",
-      "My skills range from designing intuitive and appealing user interfaces to developing robust and scalable code. If you are looking for a highly skilled professional for your team or project, do not hesitate to contact me."
-    ],
-    "downloadResume": "Download PDF Resume",
+    "header": {
+      "home": "Home",
+      "about": "About me",
+      "contact": "Contact",
+      "resume": "Resume",
+      "projects": "Projects",
+      "language": "Language"
+    },
+    "title": {
+      "education": "Education",
+      "experience": "Experiences",
+      "projects": "My Projects",
+      "skills": "Languages, Skills and Tools",
+      "filter": "Filter by area:",
+      "filterLabel": "Select an area",
+      "filterWarning": "No projects found with this filter",
+      "filterBox": "Showing {{filter}} projects",
+      "button": "See more",
+      "button2": "See less",
+      "buttonVisit": "Visit website",
+      "buttonPrivate": "Private project",
+      "buttonGithub": "See on GitHub",
+      "buttonFigma": "See on Figma",
+      "buttonScroll": "Scroll to top"
+    },
+    "call": {
+      "WhoIs": "And who is",
+      "Resume": "See my professional resume",
+      "Home": "Hi, my name is",
+      "Home2": "Full Stack Developer and UI/UX Designer",
+      "Home3": [
+        "I'm passionate about technology and creating solutions that improve people's lives. I have been working on web applications for over {{years}} years.",
+        "My skills range from designing intuitive and appealing user interfaces to developing robust and scalable code. If you are looking for a highly skilled professional for your team or project, do not hesitate to contact me."
+      ],
+      "downloadResume": "Download PDF Resume"
+    },
     "whoIs": [
       "I was born in Torrinha, a small town in the interior of São Paulo, but currently I live in São Carlos, where I study Computer Engineering at the Federal University of São Carlos (UFSCar). Since I started my undergraduate studies in Computer Engineering, I have been striving to learn everything I can about the world of technology, with the goal of becoming a complete professional capable of creating innovative solutions for complex problems.",
       "My academic journey has been full of challenges and learning opportunities, and I am proud to say that I have overcome them with dedication and hard work. During my course, I had the opportunity to study disciplines such as Networks, Algorithms and Data Structures, Operating Systems, Artificial Intelligence, and Back-End and Front-End Development, and I was able to apply this knowledge in practical projects that allowed me to develop important technical and interpersonal skills.",
@@ -60,10 +78,86 @@
         "period": "2019 - 2024"
       }
     ],
-    "projects.filter": "Filter by area:",
-    "projects.filterLabel": "Select an area",
-    "projects.filterWarning": "No projects found with this filter",
-    "projects.filterBox": "Showing {{filter}} projects",
+    "projects.items": [
+      {
+        "id": "0",
+        "title": "uShare",
+        "description": "uShare is a system for university students to find and/or share properties, making it easier for those looking for a place to live, those looking for someone to share rent with, or landlords/real estate agents seeking to better promote their properties.",
+        "imageAlt": "Image of uShare website"
+      },
+      {
+        "id": "1",
+        "title": "LifeCare",
+        "description": "LifeCare is a web system project for scheduling appointments with registered professionals. It allows for the registration of users, professionals, and specialties. The system also enables searching for professionals by area and specialty.",
+        "imageAlt": "Image of the LifeCare system"
+      },
+      {
+        "id": "2",
+        "title": "LifeCare",
+        "description": "The back-end of the LifeCare system was developed with the purpose of serving as an API for the LifeCare front-end. It was developed using a function-based architecture or Function-as-a-Service (FaaS), with the Fastify framework.",
+        "imageAlt": "Image of the LifeCare system"
+      },
+      {
+        "id": "3",
+        "title": "LifeCare",
+        "description": "The LifeCare project was developed using the MVC architecture, initially using Java Servlet. A second implementation was done using the Spring Boot framework. The final implementation involved requests as an API for the LifeCare front-end.",
+        "imageAlt": "Image of the LifeCare system"
+      },
+      {
+        "id": "4",
+        "title": "DSW2 Project",
+        "description": "Implementation of static pages using only HTML, CSS, and JavaScript was carried out prior to LifeCare CSR. The project was developed with the purpose of showcasing the use of pure HTML, CSS, and JavaScript.",
+        "imageAlt": "Image of the LifeCare system"
+      },
+      {
+        "id": "5",
+        "title": "CSS Architecture",
+        "description": "A CSS architecture project was developed with the purpose of demonstrating the importance of good CSS architecture. The project was developed using pure HTML and CSS, with the application of methodologies such as BEM and Atomic Design.",
+        "imageAlt": "Image of the LifeCare system"
+      },
+      {
+        "id": "6",
+        "title": "Personal Website",
+        "description": "This website was developed with the purpose of showcasing my projects and skills. It also serves as a portfolio, so that people can learn a little more about me and my projects. The site is hosted on Netlify, through GitHub.",
+        "imageAlt": "Image of the LifeCare system"
+      },
+      {
+        "id": "7",
+        "title": "OmniStack",
+        "description": "The project was developed during the OmniStack 11.0 week with the aim of learning how to develop a complete application, including back-end, front-end, and mobile. The project consists of a system for NGOs to register cases and for people to contribute to these cases.",
+        "imageAlt": "Image of the LifeCare system"
+      },
+      {
+        "id": "8",
+        "title": "uShare",
+        "description": "uShare is a system designed for university students to find and/or share properties, making it easier for those who are searching for a place to live, those who are looking for someone to split the rent with, or for landlords/real estate agencies seeking to better promote their properties.",
+        "imageAlt": "Image of the uShare prototype"
+      },
+      {
+        "id": "9",
+        "title": "SeAche",
+        "description": "SeAche is an application designed to facilitate navigation within the university, with the aim of helping students find classrooms, food trailers, and the university restaurant.",
+        "imageAlt": "Image of the SeAche prototype"
+      },
+      {
+        "id": "10",
+        "title": "ChecAPP",
+        "description": "An application that allows anyone to save and share all of their medical exams with any professional registered in the system.",
+        "imageAlt": "Image of the ChecAPP prototype"
+      },
+      {
+        "id": "11",
+        "title": "Escavatto",
+        "description": "A web system that allows clients to hire construction machinery and equipment from registered suppliers in the system.",
+        "imageAlt": "Image of the Escavatto prototype"
+      },
+      {
+        "id": "12",
+        "title": "LifeCare",
+        "description": "LifeCare is a web-based system project for scheduling appointments with registered professionals. It allows for the registration of users, professionals, and specialties. The system also enables the search for professionals by area and specialty.",
+        "imageAlt": "Image of the LifeCare system"
+      }
+    ],
     "footer": "Design and Development by Rafael Tury"
   }
 }

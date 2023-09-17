@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="w-full py-16 bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
       <div className="w-full flex flex-col justify-between items-center px-10 py-8 gap-12">
@@ -39,7 +41,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="flex flex-col gap-4 text-center">
-          <p>© Design and Development by Rafael Tury</p>
+          <p>© {t("footer")}</p>
         </div>
       </div>
     </footer>

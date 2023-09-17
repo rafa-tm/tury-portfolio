@@ -14,7 +14,7 @@ export default function Select({ options, onSelect }) {
   };
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="inline-block text-left">
       <div className="min-w-[12rem]">
         <span className="rounded-md shadow-sm">
           <button
@@ -25,7 +25,7 @@ export default function Select({ options, onSelect }) {
             aria-expanded="true"
             onClick={() => setShowOptions(!showOptions)}
           >
-            {selectedOption ? selectedOption.label : t("projects.filterLabel")}
+            {selectedOption ? selectedOption.label : t("title.filterLabel")}
             <svg
               className="w-5 h-5 ml-2 -mr-1"
               xmlns="http://www.w3.org/2000/svg"
@@ -44,25 +44,31 @@ export default function Select({ options, onSelect }) {
       </div>
 
       {showOptions && (
-        <div
-          className="origin-top absolute mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
-          role="menu"
-          aria-orientation="vertical"
-          aria-labelledby="options-menu"
-        >
-          <div className="py-1" role="none">
-            {options.map((option) => (
-              <button
-                key={option.value}
-                onClick={() => handleOptionClick(option)}
-                className="block w-full text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
-                role="menuitem"
-              >
-                {option.label}
-              </button>
-            ))}
+        <>
+          <div
+            className="fixed top-0 left-0 h-screen w-screen z-40"
+            onClick={() => setShowOptions(false)}
+          ></div>
+          <div
+            className="origin-top absolute mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
+            role="menu"
+            aria-orientation="vertical"
+            aria-labelledby="options-menu"
+          >
+            <div className="py-1" role="none">
+              {options.map((option) => (
+                <button
+                  key={option.value}
+                  onClick={() => handleOptionClick(option)}
+                  className="block w-full text-center px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
+                  role="menuitem"
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        </>
       )}
     </div>
   );

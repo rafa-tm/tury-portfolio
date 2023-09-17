@@ -1,17 +1,99 @@
 import PropTypes from "prop-types";
 import { MdOpenInNew } from "react-icons/md";
-import Button from "./Button";
+import Button from "./Buttons/Button";
 import { FaFigma, FaGithub, FaLock } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectCard({ project }) {
+  const id = project.id;
+  const { t } = useTranslation();
+
+  function handleButtonVisit() {
+    if (project.accessLink && project.accessLink !== "Projeto privado") {
+      return (
+        <Button
+          to={project.accessLink}
+          className="flex gap-2 items-center px-4 py-2"
+          type={"primary"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
+        >
+          <span>{t("title.buttonVisit")}</span>
+          <MdOpenInNew />
+        </Button>
+      );
+    } else {
+      return (
+        <Button
+          disable
+          className="flex gap-2 items-center px-4 py-2"
+          type={"primary"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
+        >
+          <span>{t("title.buttonVisit")}</span>
+          <MdOpenInNew />
+        </Button>
+      );
+    }
+  }
+
+  function handleButtonGithubFigma() {
+    if (project.github && project.github !== "Projeto privado") {
+      return (
+        <Button
+          to={project.github}
+          className="flex gap-2 items-center px-4 py-2"
+          type={"secondary"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
+        >
+          <span>{t("title.buttonGithub")}</span>
+          <FaGithub />
+        </Button>
+      );
+    } else if (project.figma && project.figma !== "Projeto privado") {
+      return (
+        <Button
+          to={project.figma}
+          className="flex gap-2 items-center px-4 py-2"
+          type={"secondary"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
+        >
+          <span>{t("title.buttonFigma")}</span>
+          <FaFigma />
+        </Button>
+      );
+    } else {
+      return (
+        <Button
+          disable
+          className="flex gap-2 items-center px-4 py-2"
+          type={"tertiary"}
+          target={"_blank"}
+          rel={"noopener noreferrer"}
+        >
+          <span>{t("title.buttonPrivate")}</span>
+          <FaLock />
+        </Button>
+      );
+    }
+  }
+
   return (
     <div className="w-full flex flex-col shadow-lg rounded-xl border-slate-200 border-2 bg-lightBackground-100 dark:bg-darkBackground-100 overflow-hidden ">
       <div className="w-full relative">
-        <img src={project.imagem} alt={project.imagemAlt} />
+        <img
+          src={project.image}
+          alt={project.imageAlt}
+          width={770}
+          height={420}
+        />
         <div className="absolute bottom-0 right-0 flex gap-2 bg-lightBackground-100 dark:bg-darkBackground-100 px-4 py-2 items-center rounded-tl-lg ">
-          {project.category.map((category) => (
+          {project.category.map((category, index) => (
             <span
-              key={category}
+              key={index}
               className="bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText rounded-lg px-4 py-2 text-sm font-bold"
             >
               {category}
@@ -23,11 +105,11 @@ export default function ProjectCard({ project }) {
         <div className="flex flex-col w-full gap-2">
           <h1 className="text-2xl font-bold">{project.title}</h1>
           <p className="text-lg font-normal text-justify">
-            {project.description}
+            {t(`projects.items.${id}.description`)}
           </p>
         </div>
         <div className="grid grid-cols-3 w-full gap-2">
-          {project.tecnologias.map((category) => (
+          {project.technologies?.map((category) => (
             <span
               key={category}
               className="bg-lightBackground text-lightText dark:bg-darkBackground dark:text-darkText rounded-lg px-4 py-2 text-sm font-bold text-center items-center justify-center flex"
@@ -37,71 +119,8 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
         <div className="flex flex-col w-full gap-4">
-          {project.linkAcesso === " " ||
-          project.linkAcesso === "" ||
-          project.linkAcesso === "Projeto privado" ? (
-            <Button
-              disable
-              className="flex gap-2 items-center px-4 py-2"
-              type={"primary"}
-              target={"_blank"}
-              rel={"noopener noreferrer"}
-            >
-              <span>Visit</span>
-              <MdOpenInNew />
-            </Button>
-          ) : (
-            <Button
-              to={project.linkAcesso}
-              className="flex gap-2 items-center px-4 py-2"
-              type={"primary"}
-              target={"_blank"}
-              rel={"noopener noreferrer"}
-            >
-              <span>Visit</span>
-              <MdOpenInNew />
-            </Button>
-          )}
-
-          {project.github === " " ||
-          project.github === "" ||
-          project.github === "Projeto privado" ? (
-            project.figma !== "Projeto privado" &&
-            project.category[0] === "UI/UX" ? (
-              <Button
-                to={project.figma}
-                className="flex gap-2 items-center px-4 py-2"
-                type={"secondary"}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-              >
-                <span>Figma</span>
-                <FaFigma />
-              </Button>
-            ) : (
-              <Button
-                disable
-                className="flex gap-2 items-center px-4 py-2"
-                type={"tertiary"}
-                target={"_blank"}
-                rel={"noopener noreferrer"}
-              >
-                <span>Private project</span>
-                <FaLock />
-              </Button>
-            )
-          ) : (
-            <Button
-              to={project.github}
-              className="flex gap-2 items-center px-4 py-2"
-              type={"secondary"}
-              target={"_blank"}
-              rel={"noopener noreferrer"}
-            >
-              <span>GitHub</span>
-              <FaGithub />
-            </Button>
-          )}
+          {handleButtonVisit()}
+          {handleButtonGithubFigma()}
         </div>
       </div>
     </div>
@@ -109,5 +128,6 @@ export default function ProjectCard({ project }) {
 }
 
 ProjectCard.propTypes = {
-  project: PropTypes.objectOf(PropTypes.any).isRequired,
+  projectImage: PropTypes.any,
+  project: PropTypes.any,
 };

@@ -3,7 +3,7 @@ import logotipoUShare from "../assets/projetos/LogotipoUshare.svg";
 import logotipoCATI from "../assets/projetos/LogotipoCATI.svg";
 import logotipoCA from "../assets/projetos/caenc.png";
 
-import Button from "../components/Button";
+import Button from "../components/Buttons/Button";
 
 import { habilidades } from "../utils/habilidades";
 import ResumeCard from "../components/ResumeCard";
@@ -97,7 +97,9 @@ export default function SobreMim() {
       <section className="w-full flex flex-col gap-16 items-center ">
         <div className="w-full bg-secondary skew-y-1 py-3 flex items-center justify-center shadow-lg mb-6">
           <div className="w-full bg-lightBackground-100 py-3 flex items-center justify-center shadow-lg">
-            <h1 className="text-3xl text-center font-medium">{t("skills")}</h1>
+            <h1 className="text-3xl text-center font-medium">
+              {t("title.skills")}
+            </h1>
           </div>
         </div>
 

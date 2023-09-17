@@ -8,7 +8,10 @@ import Select from "../components/Select";
 export default function Projects() {
   const [filtro, setFiltro] = useState(null);
   const [projetosFiltrados, setProjetosFiltrados] = useState([]);
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation();
 
   useEffect(() => {
     if (filtro && filtro !== "Todos") {
@@ -23,28 +26,20 @@ export default function Projects() {
   }, [filtro]);
 
   const options = [
+    { label: "Todos", value: "Todos" },
     { label: "UI/UX", value: "UI/UX" },
     { label: "Front-End", value: "Front-End" },
     { label: "Back-End", value: "Back-End" },
     { label: "Mobile", value: "Mobile" },
-    { label: "Todos", value: "Todos" },
   ];
 
   const handleSelect = (option) => {
     setFiltro(option.label);
   };
 
-  function teste() {
-    const projetosSemImagem = projetos.map(
-      ({ imagem, ...projetoRestante }) => projetoRestante
-    );
-
-    console.log(JSON.stringify(projetosSemImagem, null, 2));
-  }
-
   return (
     <main className="min-h-screen w-full flex flex-col bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">
-      <section className="w-full flex flex-col py-40 gap-16 justify-center items-center ">
+      <section className="w-full flex flex-col py-32 gap-16 justify-center items-center ">
         {/* Titulo e Filtro */}
         <div className="w-full flex flex-col  gap-8 items-start justify-between">
           {/* Titulo */}
@@ -56,16 +51,23 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="w-full flex flex-col py-8 md:flex-row justify-evenly items-center gap-4">
+          <div className="w-full flex flex-col py-8 justify-evenly items-center gap-4">
             <div className="flex justify-center items-center gap-6">
-              <p className="text-lg font-medium">{t("projects.filter")}</p>
+              <p className="text-lg font-medium">{t("title.filter")}</p>
               <Select options={options} onSelect={handleSelect} />
             </div>
 
             {filtro && (
               <p className=" text-lg font-medium bg-tertiary px-2 py-1">
-                {t("projects.filterBox", {
-                  filter: filtro === "UI/UX" ? "UI ⁄ UX" : filtro,
+                {t("title.filterBox", {
+                  filter:
+                    filtro === "UI/UX"
+                      ? "UI ⁄ UX"
+                      : filtro === "Todos" && language === "en"
+                      ? "all"
+                      : filtro === "Todos" && language === "pt"
+                      ? "sem filtro"
+                      : filtro,
                 })}
               </p>
             )}
@@ -76,7 +78,6 @@ export default function Projects() {
           {projetosFiltrados.map((projeto) => (
             <ProjectCard key={projeto.id} project={projeto} />
           ))}
-          {teste()}
         </div>
       </section>
     </main>

@@ -2,34 +2,52 @@
   "translation": {
     "en": "Inglês",
     "pt": "Português",
-    "header.home": "Início",
-    "header.about": "Sobre mim",
-    "header.contact": "Contato",
-    "header.resume": "Currículo",
-    "header.projects": "Projetos",
-    "title.education": "Educação",
-    "title.experience": "Experiências",
-    "title.projects": "Meus Projetos",
-    "skills": "Linguagens, Habilidades e Ferramentas",
-    "callWhoIs": "E quem é",
-    "callResume": "Veja meu currículo profissional",
-    "callHome": "Olá, meu nome é",
-    "callHome2": "Desenvolvedor Stack e Designer UI/UX",
-    "callHome3": [
-      "Sou apaixonado por tecnologia e pela criação de soluções que melhoram a vida das pessoas. Tenho trabalhado em aplicações web de qualidade por mais de {{years}} anos..",
-      "Minhas habilidades vão desde o design de interfaces intuitivas e atraentes até o desenvolvimento de código robusto e escalável. Se você está procurando um profissional altamente qualificado para a sua equipe ou projeto, não hesite em entrar em contato comigo."
-    ],
-    "downloadResume": "Baixar Currículo em PDF",
+    "header": {
+      "home": "Início",
+      "about": "Sobre mim",
+      "contact": "Contato",
+      "resume": "Currículo",
+      "projects": "Projetos",
+      "language": "Idioma"
+    },
+    "title": {
+      "education": "Educação",
+      "experience": "Experiências",
+      "projects": "Meus Projetos",
+      "skills": "Idiomas, Habilidades e Ferramentas",
+      "filter": "Filtrar por área:",
+      "filterLabel": "Selecione uma área",
+      "filterWarning": "Nenhum projeto encontrado com este filtro",
+      "filterBox": "Mostrando projetos {{filter}}",
+      "button": "Ver mais",
+      "button2": "Ver menos",
+      "buttonVisit": "Visitar site",
+      "buttonPrivate": "Projeto privado",
+      "buttonGithub": "Ver no GitHub",
+      "buttonFigma": "Ver no Figma",
+      "buttonScroll": "Rolar para cima"
+    },
+    "call": {
+      "WhoIs": "E quem é",
+      "Resume": "Veja meu currículo profissional",
+      "Home": "Oi, meu nome é",
+      "Home2": "Desenvolvedor Full Stack e Designer UI/UX",
+      "Home3": [
+        "Sou apaixonado por tecnologia e pela criação de soluções que melhoram a vida das pessoas. Trabalho com aplicações web há mais de {{years}} anos.",
+        "Minhas habilidades vão desde a criação de interfaces de usuário intuitivas e atraentes até o desenvolvimento de código robusto e escalável. Se você procura um profissional altamente qualificado para sua equipe ou projeto, não hesite em entrar em contato comigo."
+      ],
+      "downloadResume": "Baixar Currículo em PDF"
+    },
     "whoIs": [
-      "Eu nasci em Torrinha, uma pequena cidade no interior de São Paulo, mas atualmente moro em São Carlos, onde estudo Engenharia da Computação na Universidade Federal de São Carlos (UFSCar). Desde que comecei meus estudos de graduação em Engenharia da Computação, tenho me esforçado para aprender tudo o que posso sobre o mundo da tecnologia, com o objetivo de me tornar um profissional completo capaz de criar soluções inovadoras para problemas complexos.",
-      "Minha jornada acadêmica tem sido repleta de desafios e oportunidades de aprendizado, e estou orgulhoso de dizer que os superei com dedicação e trabalho árduo. Durante meu curso, tive a oportunidade de estudar disciplinas como Redes, Algoritmos e Estruturas de Dados, Sistemas Operacionais, Inteligência Artificial e Desenvolvimento Back-End e Front-End, e pude aplicar esse conhecimento em projetos práticos que me permitiram desenvolver habilidades técnicas e interpessoais importantes.",
-      "Além dos meus estudos, sou apaixonado por tecnologia e inovação, e sempre busco me manter atualizado nas últimas tendências e desenvolvimentos na área. Acredito que a tecnologia tem o poder de transformar vidas e mudar o mundo, e quero fazer parte dessa transformação. Já participei de uma empresa júnior e de um centro acadêmico dentro da universidade, o que me proporcionou valiosa experiência em liderança, trabalho em equipe e resolução de problemas.",
-      "Se você está procurando um estudante dedicado, apaixonado e ávido por conhecimento para ajudar a criar soluções inovadoras para problemas complexos, não hesite em entrar em contato comigo. Adoraria discutir como posso ajudá-lo a alcançar seus objetivos!"
+      "Nasci em Torrinha, uma pequena cidade no interior de São Paulo, mas atualmente moro em São Carlos, onde estudo Engenharia da Computação na Universidade Federal de São Carlos (UFSCar). Desde o início da minha graduação em Engenharia da Computação, tenho me esforçado para aprender tudo o que posso sobre o mundo da tecnologia, com o objetivo de me tornar um profissional completo capaz de criar soluções inovadoras para problemas complexos.",
+      "Minha jornada acadêmica tem sido repleta de desafios e oportunidades de aprendizado, e estou orgulhoso de dizer que os superei com dedicação e trabalho árduo. Durante o curso, tive a oportunidade de estudar disciplinas como Redes, Algoritmos e Estruturas de Dados, Sistemas Operacionais, Inteligência Artificial e Desenvolvimento Back-End e Front-End, e pude aplicar esse conhecimento em projetos práticos que me permitiram desenvolver habilidades técnicas e interpessoais importantes.",
+      "Além dos estudos, sou apaixonado por tecnologia e inovação, e sempre busco me manter atualizado sobre as últimas tendências e desenvolvimentos na área. Acredito que a tecnologia tem o poder de transformar vidas e mudar o mundo, e quero fazer parte dessa transformação. Já participei de uma empresa júnior e de um centro acadêmico na universidade, o que me proporcionou experiência valiosa em liderança, trabalho em equipe e resolução de problemas.",
+      "Se você procura um estudante dedicado, apaixonado e sedento por conhecimento para ajudá-lo a criar soluções inovadoras para problemas complexos, não hesite em entrar em contato comigo. Ficarei feliz em discutir como posso ajudá-lo a alcançar seus objetivos!"
     ],
     "resume.items": [
       {
         "title": "Desenvolvedor Front-End",
-        "description": "Desenvolvimento de sites usando Vite JS, React JS e TailwindCSS.",
+        "description": "Desenvolvimento de site usando Vite JS, React JS e TailwindCSS.",
         "period": "Fev 2023 - Presente"
       },
       {
@@ -44,12 +62,12 @@
       },
       {
         "title": "Membro de Design UI/UX e Marketing",
-        "description": "Design de vários protótipos de interfaces móveis e web usando o Figma. Criação de conteúdo para mídias sociais usando técnicas de marketing, com os softwares Adobe Illustrator, Photoshop e Canva.",
+        "description": "Design de diversos protótipos de interfaces móveis e web usando o Figma. Criação de conteúdo para mídias sociais usando técnicas de marketing, com os softwares Adobe Illustrator, Photoshop e Canva.",
         "period": "Nov 2021 - Jun 2022"
       },
       {
         "title": "Diretor de Comunicação",
-        "description": "Responsável pela comunicação com outras entidades e estudantes em relação a assuntos do Centro Acadêmico. Gerenciamento e criação de conteúdo para mídias sociais usando Adobe Illustrator e Photoshop.",
+        "description": "Responsável pela comunicação com outras entidades e estudantes em assuntos do Centro Acadêmico. Gerenciamento e criação de conteúdo para mídias sociais com Adobe Illustrator e Photoshop.",
         "period": "Set 2021 - Jul 2022"
       }
     ],
@@ -60,10 +78,86 @@
         "period": "2019 - 2024"
       }
     ],
-    "projects.filter": "Filtrar por area:",
-    "projects.filterLabel": "Selecione uma área",
-    "projects.filterWarning": "Nenhum projeto encontrado com essa área",
-    "projects.filterBox": "Exibindo projetos de {{filter}}",
-    "footer": "Design e Desenvolvimento por Rafael Tury"
+    "projects.items": [
+      {
+        "id": "0",
+        "title": "uShare",
+        "description": "uShare é um sistema para estudantes universitários encontrarem e/ou compartilharem imóveis, facilitando para quem procura um lugar para morar, quem procura alguém para dividir o aluguel ou proprietários/imobiliárias que desejam promover melhor seus imóveis.",
+        "imageAlt": "Imagem do site uShare"
+      },
+      {
+        "id": "1",
+        "title": "LifeCare",
+        "description": "LifeCare é um projeto de sistema web para agendamento de consultas com profissionais registrados. Permite o registro de usuários, profissionais e especialidades. O sistema também possibilita a busca de profissionais por área e especialidade.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      },
+      {
+        "id": "2",
+        "title": "LifeCare",
+        "description": "O back-end do sistema LifeCare foi desenvolvido com o propósito de servir como uma API para o front-end do LifeCare. Foi desenvolvido usando uma arquitetura baseada em funções ou Function-as-a-Service (FaaS), com o framework Fastify.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      },
+      {
+        "id": "3",
+        "title": "LifeCare",
+        "description": "O projeto LifeCare foi desenvolvido usando a arquitetura MVC, inicialmente usando Java Servlet. Uma segunda implementação foi feita usando o framework Spring Boot. A implementação final envolveu requisições como uma API para o front-end do LifeCare.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      },
+      {
+        "id": "4",
+        "title": "Projeto DSW2",
+        "description": "A implementação de páginas estáticas usando apenas HTML, CSS e JavaScript foi realizada antes do LifeCare CSR. O projeto foi desenvolvido com o objetivo de demonstrar o uso de HTML, CSS e JavaScript puros.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      },
+      {
+        "id": "5",
+        "title": "Arquitetura CSS",
+        "description": "Um projeto de arquitetura CSS foi desenvolvido com o propósito de demonstrar a importância de uma boa arquitetura CSS. O projeto foi desenvolvido usando apenas HTML e CSS, com a aplicação de metodologias como BEM e Atomic Design.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      },
+      {
+        "id": "6",
+        "title": "Site Pessoal",
+        "description": "Este site foi desenvolvido com o propósito de mostrar meus projetos e habilidades. Também serve como um portfólio, para que as pessoas possam conhecer um pouco mais sobre mim e meus projetos. O site está hospedado no Netlify, por meio do GitHub.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      },
+      {
+        "id": "7",
+        "title": "OmniStack",
+        "description": "O projeto foi desenvolvido durante a semana OmniStack 11.0 com o objetivo de aprender a desenvolver um aplicativo completo, incluindo back-end, front-end e mobile. O projeto consiste em um sistema para ONGs registrarem casos e para pessoas contribuírem com esses casos.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      },
+      {
+        "id": "8",
+        "title": "uShare",
+        "description": "uShare é um sistema projetado para estudantes universitários encontrarem e/ou compartilharem imóveis, facilitando para quem está procurando um lugar para morar, quem está procurando alguém para dividir o aluguel ou para proprietários/imobiliárias que desejam promover melhor seus imóveis.",
+        "imageAlt": "Imagem do protótipo uShare"
+      },
+      {
+        "id": "9",
+        "title": "SeAche",
+        "description": "SeAche é um aplicativo projetado para facilitar a navegação na universidade, com o objetivo de ajudar os estudantes a encontrar salas de aula, food trucks e o restaurante da universidade.",
+        "imageAlt": "Imagem do protótipo SeAche"
+      },
+      {
+        "id": "10",
+        "title": "ChecAPP",
+        "description": "Um aplicativo que permite a qualquer pessoa salvar e compartilhar todos os seus exames médicos com qualquer profissional registrado no sistema.",
+        "imageAlt": "Imagem do protótipo ChecAPP"
+      },
+      {
+        "id": "11",
+        "title": "Escavatto",
+        "description": "Um sistema web que permite que clientes aluguem máquinas e equipamentos de construção de fornecedores registrados no sistema.",
+        "imageAlt": "Imagem do protótipo Escavatto"
+      },
+      {
+        "id": "12",
+        "title": "LifeCare",
+        "description": "LifeCare é um projeto de sistema web para agendamento de consultas com profissionais registrados. Permite o registro de usuários, profissionais e especialidades. O sistema também possibilita a busca de profissionais por área e especialidade.",
+        "imageAlt": "Imagem do sistema LifeCare"
+      }
+    ],
+    "footer": "Feito com ❤️ por Rafael Tury"
   }
 }
