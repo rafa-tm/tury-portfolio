@@ -137,7 +137,7 @@ export default function SobreMim() {
             }
           }}
         >
-          {t("downloadResume")}
+          {t("call.downloadResume")}
         </Button>
       </section>
     </main>

@@ -19,9 +19,5 @@ export default function App() {
     detectLanguage();
   }, [changeLanguage]);
 
-  return (
-    <>
-      <Rotas />
-    </>
-  );
+  return <Rotas />;
 }

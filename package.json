@@ -13,6 +13,7 @@
     "@djpfs/react-vlibras": "^2.0.2",
     "axios": "^1.4.0",
     "country-flag-icons": "^1.5.7",
+    "framer-motion": "^10.16.4",
     "i18next": "^23.5.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
