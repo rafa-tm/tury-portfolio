@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { FaEnvelope, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaMedium, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -22,6 +22,14 @@ export default function Footer() {
             className="hover:text-tertiary hover:scale-125 transition duration-300"
           >
             <FaGithub className="text-2xl" />
+          </a>
+          <a
+            href="https://medium.com/@rafaelturyminatel"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-tertiary hover:scale-125 transition duration-300"
+          >
+            <FaMedium className="text-2xl" />
           </a>
           <a
             href="mailto:rafaelturyminatel@gmail.com"

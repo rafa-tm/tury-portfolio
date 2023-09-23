@@ -27,7 +27,7 @@ export default function SobreMim() {
         <div className="container px-6 flex flex-wrap">
           {/* Card Educação */}
           <ResumeCard
-            logotipo="https://www.dche.ufscar.br/documentos/imagens/logo-ufscar.png"
+            logotipo="https://upload.wikimedia.org/wikipedia/commons/f/f9/Logomarca_UFSCAR.png"
             resume={{
               title: t("education.items.0.title"),
               description: t("education.items.0.description"),
